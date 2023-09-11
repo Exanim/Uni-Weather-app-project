@@ -22,4 +22,4 @@ flowchart LR
 ---
 ### Vágyálom rendszer:
 Célunk ügyfeleink naprakész, percre pontos információk szerzése a jelenlegi időjárásról annak céljából, hogy ne érhessék meglepetések utazás, kirándulás esetében, hogy tudják, mikor hogyan kell öltözködniük és mit kell magukkal vinniük az utazásokra. Az alkalmazásnak könnyen üzemeltethetőnek kell lennie. Az online megjelenítésnek lehetőleg reszponzívnak kell lennie, hogy mobil / tablet illetve számítógép eszközökön is szépen, jól láthatóan megjelenített legyen. Elvárt a platformfüggetlenség, nem elfogadható, ha csak egy operációs rendszeren futtatható az alkalmazás.
->>>>>>> d9be64245d23121750c441a378ae164b3176efb4
+
