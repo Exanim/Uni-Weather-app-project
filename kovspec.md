@@ -13,7 +13,7 @@ Célunk ügyfeleink naprakész, percre pontos információk szerzése a jelenleg
 ##### App indítása:
 Aktuális tartózkodási hely időjárásának megjelenítése.
 
-3.2. Új város hozzáadása: 
+3.2. Új város hozzáadsa: 
 
 ```mermaid
 flowchart LR
