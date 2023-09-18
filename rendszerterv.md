@@ -42,7 +42,6 @@ flowchart TD
     addCityMenu[Hozzáadás Menü]
     editExisting([Szerkesztés])
     deleteExisiting([Törlés])
-    list{{Városok}}
 
     menu --> map
     menu --> clearAll
@@ -51,13 +50,11 @@ flowchart TD
     addCity --> addCityMenu
     savedCities --> editExisting
     savedCities --> deleteExisiting
-    addCityMenu --> list
 ```
 ```mermaid
 flowchart TD
     func([Funkció])
     menu[Menü]
-    list{{Lista}}
 ```
 
 ### Város
