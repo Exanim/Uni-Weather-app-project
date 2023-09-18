@@ -31,7 +31,16 @@ Kizárólag PC-ről elérhető webes felület van tervben.
 
 ## Funkcionális terv
 
-
+### Menühierarchia
+```mermaid
+flowchart TD
+    Menu --> clearAll([Clear All])
+    Menu --> savedCities[Saved Cities]
+    Menu --> addCity([Add City])
+    addCity --> addCityMenu[Add City Menu]
+    savedCities --> editExisting([Edit])
+    savedCities --> deleteExisiting([Delete])
+```
 
 ## Fizikai környezet
 
@@ -44,12 +53,17 @@ Kizárólag PC-ről elérhető webes felület van tervben.
 
 ## Implementációs terv
 
-A webes felület HTML, CSS és JavaScript nyelveken fog elkészülni. 
+A webes felület HTML, CSS és JavaScript nyelveken fog elkészülni a [Weather API](https://openweathermap.org/api)-t felhasználva.
+A rendszer fájlrendszere jelentősen szét lesz szórva az egyszerűbb kiegészítés és a könnyebb értelmezés végett. 
 
 ## Tesztterv
 
-
+A tesztelések célja a rendszer és komponensei megfelelő működésének ellenőrzése, vizsgálata.
 
 ## Telepítési terv
+
+- Android/IOS: nincs tervben
+- Webes alkalmazás: Az alkalmazás megtekintéséhez szükséges **egy** az ajánlott böngészők közül:
+Google Chrome, Mozilla Firefox, Opera 
 
 
