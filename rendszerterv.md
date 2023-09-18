@@ -1,37 +1,50 @@
 # Rendszerterv
 
-### A rendszer célja
+A rendszer célja aktuális regionális időjárási adatok hozzáférésének biztosítása.
+A felhasználónak lehetőséget ad bizonyos települések időjárási adatainak elmentésére.
+Kizárólag PC-ről elérhető webes felület van tervben.
+
+## A rendszer célja
 
 
 
-### Projektterv
+## Projektterv
+
+### Projekt szerepkörök
+
+| Név           | Szerepkör | Feladat |
+|---------------|-----------|---------|
+| Gyenes Balázs | Programozó | N/A |
+| Baráth Simon  | Programozó | N/A |
+| Brázda Martin | Programozó | N/A |
+| Deák Erik | Programozó | N/A |
 
 
 
-### Üzleti folyamatok modellje
+## Üzleti folyamatok modellje
 
 
 
-### Követelmények
+## Követelmények
 
 
 
-### Funkcionális terv
+## Funkcionális terv
 
 
 
-### Fizikai környezet
+## Fizikai környezet
 
 
 
-### Implementációs terv
+## Implementációs terv
 
 
 
-### Tesztterv
+## Tesztterv
 
 
 
-### Telepítési terv
+## Telepítési terv
 
 
