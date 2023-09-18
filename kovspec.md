@@ -11,9 +11,19 @@ Célunk ügyfeleink naprakész, percre pontos információk szerzése a jelenleg
 ### Jelenlegi üzleti folyamatok:
 
 ##### App indítása:
-Aktuális tartózkodási hely időjárásának megjelenítése.
+A felhasználó elé táruljon egy szép, igényes felület, melyen lehetősége van beírni az általa választott várost illetve települést.
+##### Widgetek:
+A felhasználó egy különböző elemekből felépített felületet lásson, melyen dinamikusan megjelenik az aktuális település időjárása.
+##### Szükséges időjárásadatok közlése:
+Az alkalmazás tartalmazza az időjárásolvasáshoz szükséges összes adatot például: hőmérséklet, település neve, százalékos páratartalom valamint a szél sebessége
+##### Felhasználói interakciók feldolgozásáért felelős információinput
+Szükséges az alkalmazásnak tartalmaznia egy keresősávot, valamint a keresősávhoz egy megfelelő "Keresés" gombot.
+##### Információbecslés, avagy "Könnyített Mód"
+Az információ feldolgozását meg kell próbálni megtippelni, amennyiben a felhasználó félreírja a számára igényelt település megnevezését!
+##### A keresőgomb működése
+A keresésgomb lenyomásakor az alkalmazás kiírja a felületre a fent említett adatokat.
 
-3.2. Új város hozzáadsa: 
+3.2. Új város hozzáadsa:
 
 ```mermaid
 flowchart LR
