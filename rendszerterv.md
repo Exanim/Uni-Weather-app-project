@@ -34,14 +34,19 @@ Kizárólag PC-ről elérhető webes felület van tervben.
 ### Menühierarchia
 ```mermaid
 flowchart TD
-    Menu --> clearAll([Clear All])
-    Menu --> savedCities[Saved Cities]
-    Menu --> addCity([Add City])
-    addCity --> addCityMenu[Add City Menu]
-    savedCities --> editExisting([Edit])
-    savedCities --> deleteExisiting([Delete])
+    menu[Kezdőképernyő] --> map[Térkép]
+    menu[Kezdőképernyő] --> clearAll([Mind törlése])
+    menu[Kezdőképernyő] --> savedCities[Elmentett Városok]
+    menu[Kezdőképernyő] --> addCity([Hozzáadás])
+    addCity([Hozzáadás]) --> addCityMenu[Hozzáadás Menü]
+    savedCities[Elmentett Városok] --> editExisting([Szerkesztés])
+    savedCities[Elmentett Városok] --> deleteExisiting([Törlés])
 ```
-
+```mermaid
+flowchart TD
+    func([Funkció])
+    menu[Menü]
+```
 ## Fizikai környezet
 
 - Az alkalmazás kizárólag PC-ről használt webes felületre készül.
