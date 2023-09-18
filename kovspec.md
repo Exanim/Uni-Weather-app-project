@@ -23,7 +23,17 @@ Az információ feldolgozását meg kell próbálni megtippelni, amennyiben a fe
 ##### A keresőgomb működése
 A keresésgomb lenyomásakor az alkalmazás kiírja a felületre a fent említett adatokat.
 
-3.2. Új város hozzáadsa:
+### Követelménylista:
+
+| **ID** | **Név** | **Kifejtés** |
+|--------|---------|--------------|
+| K1 | Felhasználói interfész | Az alkalmazásnak egy felhasználóbarát felülettel kell rendelkeznie. |
+| K2 | Helyszínválasztás      | A helyszínválasztásnak lehetővé kell tennie a felhasználók számára, hogy kereső opció segítségével gyorsan megtalálhassák a választott helyszínt/várost. |
+| K3 | Időjárásinformációk    | Az időjárásinformációknak pontosnak és naprakésznek kell lenniük, hogy a felhasználók megbízható adatokhoz jussanak. |
+| K4 | Aktuális hőmérséklet   | Az aktuális hőmérsékletnek kiemelten kell megjelennie. |
+| K5 | Előrejelzés            | Az előrejelzésnek öt napos időtávot kell lefednie és grafikus formában kell bemutatnia az időjárás változásait. |
+| K6 | Mobilkompatibilitás    | A reszponzív designnak biztosítania kell, hogy az alkalmazás megfelelően műdjön mobiltelefonokon és tableteken is. |
+| K7 | Adatforrás             | Az időjárásinformációk lekérdezését egy külső weather API használatával kell megvalósítani. |
 
 ```mermaid
 flowchart LR
