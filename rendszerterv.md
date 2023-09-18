@@ -39,8 +39,8 @@ flowchart TD
     menu[Kezdőképernyő] --> savedCities[Elmentett Városok]
     menu[Kezdőképernyő] --> addCity([Hozzáadás])
     addCity([Hozzáadás]) --> addCityMenu[Hozzáadás Menü]
-    savedCities --> editExisting([Szerkesztés])
-    savedCities --> deleteExisiting([Törlés])
+    savedCities[Elmentett Városok] --> editExisting([Szerkesztés])
+    savedCities[Elmentett Városok] --> deleteExisiting([Törlés])
 ```
 ```mermaid
 flowchart TD
