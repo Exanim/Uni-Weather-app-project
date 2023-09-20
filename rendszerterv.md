@@ -82,6 +82,7 @@ flowchart TD
 - Nincs monetizált komponens
 - Fejleszői eszközök:
   - Jetbrains Intellij IDEA
+  - Visual Studio Code
   - Paint.NET
 
 ## Implementációs terv
