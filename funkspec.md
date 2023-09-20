@@ -68,6 +68,9 @@ platformfüggetlenség, nem elfogadható, ha csak egy operációs rendszeren fut
 - Reklámmentesen és bejelentkezés nélkül hozzáfér a felhasználó a kívánt információhoz
 - Az ügyfél manuálisan megadja helyadatait vagy az eszköz helyadatait felhasználva automatikusan beállítja a rendszer
 - Internet elérés esetén lekéri a napi előrejelzést a beállított helyszínekre, ami magába foglalja az órákra bontott hőmérsékletet, az idő természetét, pl: felhős, napos, esős
+- Az alkalmazás kártyákra bontva megjeleníti a mai illetve a következő négy nap előrelátható időjárását
+- A kártyák tartalmazzák az időjárás intuitív megjelenítését, a hőmérsékletet, a széljárást és a páratartalmat
+- A kártyák fölött elhelyezkedik egy keresősor, mely mellett a nagyító gombra kattintva elindul a funkcionalitás
 
 
 ### Képernyőtervek
