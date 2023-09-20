@@ -73,8 +73,28 @@ platformfüggetlenség, nem elfogadható, ha csak egy operációs rendszeren fut
 - A kártyák tartalmazzák az időjárás intuitív megjelenítését, a hőmérsékletet, a széljárást és a páratartalmat
 - A kártyák fölött elhelyezkedik egy keresősor, mely mellett a nagyító gombra kattintva elindul a funkcionalitás
 
+### Forgatókönyv
+1. Az alkalmazást a felhasználó megnyitja, majd rögtön elé tárul a felület, mely tartalmaz egy keresősort,
+egy nagyító gombot, mellyel az intuíciója sugallata szerint az lesz a "Keresés" gomb, melyre rá kell
+nyomnia, hogy az előtte lévő keresősorba beírt adatot fel tudja dolgozni az alkalmazás. Az egész lila-kék alapú
+háttéren helyezkedik el, hogy hangsúlyozza a hideg színeket.
+2. Következő lépésként a felhasználó beír egy városnevet a keresőbe.
+3. A felhasználó lenyomja az entert, vagy rányom a nagyító gombra, ezáltal beküldi a beadott adatokat.
+4. A front-end validátorok segítségével meghatározza, hogy az input megfelelő-e.
+Amennyiben megfelelő, továbbküldi a back-endnek (API), mely feldolgozza az adatot, elvégzi
+a szükséges műveleteket az adattal és visszaküldi a front-end részére, továbbértékelés céljából a már
+front-end részére is értelmezhető és felhasználó számára továbbítható adatokat.
+5. A felhasználó előtt elsősorban megjelenik az általa beírt település neve
+6. Ezt követően egyesével megjelennek szépen lassan a jelenlegi nap, valamint a négy következő nap
+időjárásjelentései.
+
+
 ### Fogalomszótár
-- Kártya: kártyaszerű megjelenítése az alkalmazáson belül megjelenő napoknak
+- ***Kártya:*** kártyaszerű megjelenítése az alkalmazáson belül megjelenő napoknak
+- ***Front-end:*** amit a weboldalon látni lehet: funkciók, dizájnelemek, felépítés
+- ***Back-end:*** amit nem látni, azonban a fő számításokat végzi az alkalmazásban, egy jelentős része
+megfeleltethető az API betűhármasnak
+- ***API:*** _„Application Programming Interface”_ avagy egy szervíz, mely összeköt két alkalmazást
 
 ### Képernyőtervek
 ![](https://github.com/Exanim/Uni-Weather-app-project/blob/main/kepernyotervek/design%20plan.png)
