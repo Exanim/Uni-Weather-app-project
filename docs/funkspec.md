@@ -97,4 +97,4 @@ megfeleltethető az API betűhármasnak
 - ***API:*** _„Application Programming Interface”_ avagy egy szervíz, mely összeköt két alkalmazást
 
 ### Képernyőtervek
-![](../kepernyotervek/screen-plan.png)
+![](../kepernyotervek/sc-plan-v2.png)
