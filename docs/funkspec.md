@@ -132,9 +132,9 @@ Amennyiben megfelelő, továbbküldi a back-endnek (API), mely feldolgozza az ad
 a szükséges műveleteket az adattal és visszaküldi a front-end részére, továbbértékelés céljából a már
 front-end részére is értelmezhető és felhasználó számára továbbítható adatokat.
 
-1. A felhasználó előtt elsősorban megjelenik az általa beírt település neve
+5. A felhasználó előtt elsősorban megjelenik az általa beírt település neve
 
-2. Ezt követően egyesével megjelennek szépen lassan a jelenlegi nap, valamint a négy következő nap
+6. Ezt követően egyesével megjelennek szépen lassan a jelenlegi nap, valamint a négy következő nap
 időjárásjelentései.
 
 
