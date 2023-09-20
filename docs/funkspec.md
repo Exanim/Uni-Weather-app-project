@@ -91,10 +91,23 @@ időjárásjelentései.
 
 ### Fogalomszótár
 - ***Kártya:*** kártyaszerű megjelenítése az alkalmazáson belül megjelenő napoknak
-- ***Front-end:*** amit a weboldalon látni lehet: funkciók, dizájnelemek, felépítés
-- ***Back-end:*** amit nem látni, azonban a fő számításokat végzi az alkalmazásban, egy jelentős része
-megfeleltethető az API betűhármasnak
-- ***API:*** _„Application Programming Interface”_ avagy egy szervíz, mely összeköt két alkalmazást
+- ***Front-end:*** amit a weboldalon látni lehet: funkciók, dizájnelemek, felépítés. A weboldalak és
+webalkalmazások látható és interaktív részére vonatkozik. A front-end az az aspektus, amelyet a
+felhasználó közvetlenül észlel és használ, amikor egy weboldalt vagy alkalmazást használ.
+- ***Back-end:*** A back-end az alkalmazásnak az a része, amely a háttérben fut és kezeli az adatokat, az
+üzleti logikát, valamint a szerveroldali műveleteket. Röviden, a back-end az alkalmazás motorja, amely
+a front-end (a látható és interaktív rész) mögött dolgozik, és lehetővé teszi az alkalmazás funkcióit és
+adatszolgáltatásait. A back-end felelős az adatbázisokhoz, külső rendszerekhez és a felhasználók
+közötti adatkommunikációhoz való kapcsolódásért is.
+- ***API:*** _„Application Programming Interface”_ egy interfész vagy közvetítő réteg, amely lehetővé teszi két
+különböző szoftveralkalmazásnak vagy rendszernek, hogy kommunikáljon egymással. Az API
+meghatározza, hogy hogyan lehet kérni bizonyos funkciókat vagy adatokat egy alkalmazástól, és
+hogyan adja vissza az eredményeket.
+- ***HTTP kérések:*** A HTTP kérés egy olyan üzenet, amit a böngésző vagy egy másik kliens küld a web
+szervernek, amikor egy weboldalt vagy erőforrást (pl. HTML dokumentumot) kér le. Az HTTP kérés
+tartalmazza a kérés típusát (GET, POST stb.), a kért erőforrás URL-jét és egyéb metainformációkat. A mi
+alkalmazásunkban például a metakérések tartalmazzák a mai nappal együtt az elkövetkező 5 nap
+időjáráselőrejelzését.
 
 ### Képernyőtervek
 ![](../kepernyotervek/sc-plan-v2.png)
