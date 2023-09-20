@@ -63,8 +63,9 @@ kell lennie, hogy mobil / tablet illetve számítógép eszközökön is szépen
 Az ügyfélnek négy következő napon kívül a mai napnak is láthatónak kell lennie, hogy milyen időjárásra kell számítani. Elvárt a
 platformfüggetlenség, nem elfogadható, ha csak egy operációs rendszeren futtatható az alkalmazás.
 
+### Jelenlegi üzleti folyamatok leírása
 
-### Igényelt üzleti folyamatok leírás
+### Igényelt üzleti folyamatok leírása
 - Reklámmentesen és bejelentkezés nélkül hozzáfér a felhasználó a kívánt információhoz
 - Az ügyfél manuálisan megadja helyadatait vagy az eszköz helyadatait felhasználva automatikusan beállítja a rendszer
 - Internet elérés esetén lekéri a napi előrejelzést a beállított helyszínekre, ami magába foglalja az órákra bontott hőmérsékletet, az idő természetét, pl: felhős, napos, esős
