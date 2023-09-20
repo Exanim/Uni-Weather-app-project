@@ -21,12 +21,13 @@ Kizárólag PC-ről elérhető webes felület van tervben.
 
 ### Ütemterv
 
-| Funkció | Feladat | Prioritás | Becslés (h) | Eltelt Idő (h) | Hátralévő idő (h) |
-|---------|---------|-----------|-------------|----------------|-------------------|
-|KövSpec|         | 0         | 4           | 1              | 3                 |
-|FunkSpec|         | 0         | 4           | 1              | 3                 |
-|Rendszerterv|         | 0         | 4           | 1              | 3                 |
-
+| Funkció | Feladat                        | Prioritás | Becslés (h) | Eltelt Idő (h) | Hátralévő idő (h) |
+|---------|--------------------------------|-----------|-------------|----------------|-------------------|
+|KövSpec|                                | 0         | 4           | 1              | 3                 |
+|FunkSpec|                                | 0         | 4           | 1              | 3                 |
+|Rendszerterv|                                | 0         | 4           | 1              | 3                 |
+| WebApp | Felület stílus elkészítése     | 1         | 8           | 0              | 8                 |
+| | Felület Controller Elkészítése | 2         | 6           | 0              | 6                 | 
 
 
 ## Üzleti folyamatok modellje
