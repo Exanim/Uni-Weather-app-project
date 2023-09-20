@@ -67,11 +67,45 @@ platformfüggetlenség, nem elfogadható, ha csak egy operációs rendszeren fut
 
 ### Igényelt üzleti folyamatok leírása
 - Reklámmentesen és bejelentkezés nélkül hozzáfér a felhasználó a kívánt információhoz
+
 - Az ügyfél manuálisan megadja helyadatait vagy az eszköz helyadatait felhasználva automatikusan beállítja a rendszer
+
 - Internet elérés esetén lekéri a napi előrejelzést a beállított helyszínekre, ami magába foglalja az órákra bontott hőmérsékletet, az idő természetét, pl: felhős, napos, esős
+
 - Az alkalmazás kártyákra bontva megjeleníti a mai illetve a következő négy nap előrelátható időjárását
+
 - A kártyák tartalmazzák az időjárás intuitív megjelenítését, a hőmérsékletet, a széljárást és a páratartalmat
+
 - A kártyák fölött elhelyezkedik egy keresősor, mely mellett a nagyító gombra kattintva elindul a funkcionalitás
+
+- Engedélyezni a felhasználoknak, hogy beállítsák az időjárási riasztásokat, például eső vagy hó előrejelzés
+esetén. Ez segíthet nekik felkészülni az időjárás változásaira.
+
+- A kártyákon kívül engedélyezni a felhasználóknak, hogy kattintsanak a napi időjárási részletekre, és
+lássák a részletes időjárási előrejelzést, például a páratartalmat, a napnyugtát és a napkelte idejét.
+
+- Adatokat szolgáltathatunk a légköri viszonyokról, például a légszennyezettségi szintekről vagy a
+pollenkoncentrációról, amelyek hasznosak lehetnek az allergiásoknak és az egészségüket figyelő
+felhasználóknak.
+
+- Időjárási térképek: térképek feltöltése az alkalmazásba, amelyeken megjelenik a radar és a
+hőmérsékleti térkép. Ezen térképek segítségével a felhasználók könnyen áttekinthetik az időjárási
+körülményeket.
+
+- Engedélyezés a felhasználóknak, hogy megosszák az időjárási információkat közösségi média
+platformokon, így további felhasználókat vonzhatnak  az alkalmazáshoz.
+
+- Felhasználói visszajelzés és értékelések kérése a felhasználóktól, hogy folyamatosan fejlesztő legyen az
+alkalmazás és jobb élményt nyújthassunk.
+
+- Offline használat biztosítása, hogy a felhasználók hozzáférhessenek az időjárási információkhoz,
+amikor nincs internetkapcsolatuk.
+
+- Élő háttérképek az időjárási körülményeknek megfelelően, így az alkalmazás vizuálisan is érdekes
+legyen.
+
+- Widgeteket fejlesztése, amelyek lehetővé teszik az időjárás információinak gyors megtekintését a
+felhasználók kezdőképernyőjén.
 
 ### Forgatókönyv
 1. Az alkalmazást a felhasználó megnyitja, majd rögtön elé tárul a felület, mely tartalmaz egy keresősort,
