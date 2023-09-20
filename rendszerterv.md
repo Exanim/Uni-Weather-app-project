@@ -43,12 +43,8 @@ Kizárólag PC-ről elérhető webes felület van tervben.
 ### Menühierarchia
 ```mermaid
 flowchart TD
-  Menu --> clearAll([Clear All])
-  Menu --> savedCities[Saved Cities]
-  Menu --> addCity([Add City])
-  addCity --> addCityMenu[Add City Menu]
-  savedCities --> editExisting([Edit])
-  savedCities --> deleteExisiting([Delete])
+  Menu --> dataCard[Data Card]
+  Menu --> search([Search])
 ```
 ```mermaid
 flowchart TD
