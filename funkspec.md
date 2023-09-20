@@ -29,7 +29,6 @@ Különböző városok időjárásának megfigyelésére alkalmas. Jelen és jö
 tartalmazza a hőmérséklet, szél és egyéb időjárással kapcsolatos státusz megosztását / megjelenítését. Csak meg kell
 nyitnia alkalmazásunkat, beírni az Ön városát és máris öltözködhet az igényei szerint!
 
-
 Számos forrásból tudunk tájékozódni az időjárásról. Többek között a TV-ből, az alapértelmezett vagy az általunk
 letöltött telefonos applikációnkon vagy esetleg webes böngészőn keresztül. A felsorolt források különböző naprakész
 adatokból dolgoznak, de szinte mindegyikükben közös, hogy figyelemelterelő reklámok, egyértelmű hátrányok, vagy havi
