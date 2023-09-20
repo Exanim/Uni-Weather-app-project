@@ -72,6 +72,8 @@ platformfüggetlenség, nem elfogadható, ha csak egy operációs rendszeren fut
 - A kártyák tartalmazzák az időjárás intuitív megjelenítését, a hőmérsékletet, a széljárást és a páratartalmat
 - A kártyák fölött elhelyezkedik egy keresősor, mely mellett a nagyító gombra kattintva elindul a funkcionalitás
 
+### Fogalomszótár
+- Kártya: kártyaszerű megjelenítése az alkalmazáson belül megjelenő napoknak
 
 ### Képernyőtervek
 ![](https://github.com/Exanim/Uni-Weather-app-project/blob/main/kepernyotervek/design%20plan.png)
