@@ -97,4 +97,4 @@ megfeleltethető az API betűhármasnak
 - ***API:*** _„Application Programming Interface”_ avagy egy szervíz, mely összeköt két alkalmazást
 
 ### Képernyőtervek
-![](https://github.com/Exanim/Uni-Weather-app-project/blob/main/kepernyotervek/design%20plan.png)
+![](../kepernyotervek/screen-plan.png)
