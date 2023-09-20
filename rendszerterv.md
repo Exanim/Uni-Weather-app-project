@@ -45,6 +45,13 @@ Kizárólag PC-ről elérhető webes felület van tervben.
 
 ### Üzleti folyamatok
 
+1. **Város Lekérdezése:** Adott város időjárási adatainak lekérdezése
+Az eseményt az alkalmazás felhasználói felülete indítja.
+
+   - Input: Felhasználói input
+   - Output: Lekérdezni kívánt város időjárási adatai 5 napra előrejósolva
+   - Szereplők: Felhasználó
+
 ## Követelmények
 
 
