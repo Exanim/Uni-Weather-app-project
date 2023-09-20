@@ -1,8 +1,19 @@
 # Funkcionális specifikáció
 
 ### Jelenlegi helyzet leírása
-Számos forrásból tudunk tájékozódni az időjárásról. Többek között a TV-ből, az alapértelmezett vagy az általunk letöltött telefonos applikációnkon vagy esetleg webes böngészőn keresztül.
-A felsorolt források különböző naprakész adatokból dolgoznak, de szinte mindegyikükben közös, hogy figyelemelterelő reklámok, egyértelmű hátrányok, vagy havi feliratkozói díjazás csökkentik a felhasználói élményt.
+Számos forrásból tudunk tájékozódni az időjárásról. Többek között a TV-ből, az alapértelmezett vagy az általunk
+letöltött telefonos applikációnkon vagy esetleg webes böngészőn keresztül. A felsorolt források különböző naprakész
+adatokból dolgoznak, de szinte mindegyikükben közös, hogy figyelemelterelő reklámok, egyértelmű hátrányok, vagy havi
+feliratkozói díjazás csökkentik a felhasználói élményt.
+
+### Követelménylista
+- Kártya jellegű megjelenítés, ahol a mai és a következő 4 nap előre látható / jelenlegi időjárása megjelenik
+- A kártyák tartalmazzanak egy napocskát, amennyiben az idő napos, valamint egy felhőt, amennyiben felhős
+- Ezen felül, amennyiben az idő esős, a felhőcskékből láthatóan csepegjenek esőcseppek
+- ...amennyiben borús, fekete legyen a felhő
+- Az égen látható információ egy fehér karikában jelenjen meg
+- A kártyák tartalmazzák továbbá az adott napot, melyre megjelenik az időjárás a fehér karika alatt
+- Mindezek alatt, a kártya alján jelenjen meg a páratartalom százalékosan valamint a széljárás ereje
 
   
 ### A rendszer céljai és nem céljai
@@ -17,7 +28,11 @@ Nem céljai:
 
  
 ### Vágyálomrendszer leírása
-Ingyenes weboldalunk célja, hogy ügyfeleink átlátható, naprakész, percre pontos információhoz jussanak, hogy ne érhessék meglepetések utazás, kirándulás esetében. És, hogy tudják, mikor hogyan kell öltözködniük és mit kell magukkal vinniük az utazásokra. Az alkalmazásnak könnyen üzemeltethetőnek kell lennie. Az online megjelenítésnek lehetőleg reszponzívnak kell lennie, hogy mobil / tablet illetve számítógép eszközökön is szépen, jól láthatóan megjelenített legyen. Elvárt a platformfüggetlenség, nem elfogadható, ha csak egy operációs rendszeren futtatható az alkalmazás.
+Ingyenes weboldalunk célja, hogy ügyfeleink átlátható, naprakész, percre pontos információhoz jussanak, hogy ne érhessék
+meglepetések utazás, kirándulás esetében. És, hogy tudják, mikor hogyan kell öltözködniük és mit kell magukkal vinniük
+az utazásokra. Az alkalmazásnak könnyen üzemeltethetőnek kell lennie. Az online megjelenítésnek lehetőleg reszponzívnak
+kell lennie, hogy mobil / tablet illetve számítógép eszközökön is szépen, jól láthatóan megjelenített legyen. Elvárt a
+platformfüggetlenség, nem elfogadható, ha csak egy operációs rendszeren futtatható az alkalmazás.
 
 
 ### Igényelt üzleti folyamatok leírás
