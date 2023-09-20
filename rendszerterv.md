@@ -16,8 +16,6 @@ A webalkalmazás kártya alapú megjelenítésével a felhasználók gyorsan és
 
 ## Projektterv
 
-
-
 ### Projekt szerepkörök
 
 | Név           | Szerepkör  | Feladat           |
@@ -60,7 +58,19 @@ Az eseményt az alkalmazás felhasználói felülete indítja.
 
 ## Követelmények
 
+### Funkcionális követelmények
 
+> ### Megtekinteni kivánt város adatainak megjelenítése
+> 
+> *Röviden*: Az alkalmazásnak könnyen értelmezhető módon kell megjelenítenie az adatokat.
+> 
+> Célunk, hogy minden felhasználó könnyen és akadálymentesen hozzáférjen az időjárási adatokhoz.
+
+> ###  Tetszőleges város adatainak lekérdezése
+> 
+> *Röviden*: Az alkalmazásnak akadálymentes módszert kell adnia a felhasználónak az általa kiválasztott város időjárási adatainak megjelenítésére.
+> 
+> Célunk, hogy minden felhasználó képes legyen váltogatni tetszőleges városok adatai között.
 
 ## Funkcionális terv
 
@@ -87,9 +97,12 @@ flowchart TD
 
 ## Implementációs terv
 
+A webes felület HTML, CSS és TypeScript nyelveken fog elkészülni a [Weather API](https://openweathermap.org/api)-t felhasználva.
+A rendszer fájlrendszere jelentősen szét lesz szórva az egyszerűbb kiegészítés és a könnyebb értelmezés végett.
+
 A webes felület elkészítése HTML, CSS, JavaScript és TypeScript nyelveken történik, az Angular keretrendszer segítségével. A kódot több különálló fájlban készítjük el, hogy növeljük az átláthatóságot és a könnyebb fejlesztést. A HTML felel a felület struktúrájáért, a CSS a stílusért, míg a JavaScript és TypeScript a dinamikus funkcionalitásért.
 
-A webes felület képes lesz kommunikálni a [Weather API](https://openweathermap.org/api) által nyújtott végpontokkal, ami lehetővé teszi az naprakész időjárási adatok lekérdezését.
+A webes felület képes lesz kommunikálni a [Weather API](https://openweathermap.org/api) által nyújtott végpontokkal, ami lehetővé teszi a naprakész időjárási adatok lekérdezését.
 
 ## Tesztterv
 
