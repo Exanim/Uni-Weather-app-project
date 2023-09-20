@@ -12,12 +12,12 @@ Kizárólag PC-ről elérhető webes felület van tervben.
 
 ### Projekt szerepkörök
 
-| Név       | Szerepkör | Feladat |
-|-------------|-----------|---------|
-| Gyenes Balázs | Programozó | N/A |
-| Baráth Simon | Programozó | N/A |
-| Brázda Martin | Programozó | N/A |
-| Deák Erik   | Programozó | N/A |
+| Név       | Szerepkör | Feladat           |
+|-------------|-----------|-------------------|
+| Gyenes Balázs | Programozó | Frontend Controll |
+| Baráth Simon | Programozó | N/A               |
+| Brázda Martin | Programozó | Frontend Style    |
+| Deák Erik   | Programozó | N/A               |
 
 ### Ütemterv
 
