@@ -89,6 +89,8 @@ flowchart TD
 
 A webes felület elkészítése HTML, CSS, JavaScript és TypeScript nyelveken történik, az Angular keretrendszer segítségével. A kódot több különálló fájlban készítjük el, hogy növeljük az átláthatóságot és a könnyebb fejlesztést. A HTML felel a felület struktúrájáért, a CSS a stílusért, míg a JavaScript és TypeScript a dinamikus funkcionalitásért.
 
+A webes felület képes lesz kommunikálni a [Weather API](https://openweathermap.org/api) által nyújtott végpontokkal, ami lehetővé teszi az naprakész időjárási adatok lekérdezését.
+
 ## Tesztterv
 
 A tesztelések célja a rendszer és komponensei megfelelő működésének ellenőrzése, vizsgálata.
