@@ -6,9 +6,9 @@ Kizárólag PC-ről elérhető webes felület van tervben.
 
 ## A rendszer célja
 
-A Weather app rendszer célja az, hogy a felhasználók számára könnyen és gyorsan hozzáférhetővé tegye az időjárási információkat. Az webalkalmazás lehetővé teszi a felhasználók számára, hogy egyszerűen megkeressék a kívánt helyszínt a kereső funkció használatával és biztosítja az időjárási adatok megjelenítését kártyák formájában. Az első kártya kiemelt módon mutatja be az aktuális hőmérsékletet, míg a további kártya grafikusan ábrázolja a négy napos előrejelzést, segítve a felhasználókat a jövőbeli időjárás megértésében.
+A Weather webapplikáció célja az, hogy a felhasználók számára könnyen és gyorsan hozzáférhetővé tegye az időjárási információkat. A webalkalmazás lehetővé teszi a felhasználók számára, hogy egyszerűen megkeressék a kívánt helyszínt a kereső funkció használatával, és biztosítja az időjárási adatok megjelenítését kártyák formájában. Az első kártya kiemelt módon mutatja be az aktuális hőmérsékletet, míg a további kártya grafikusan ábrázolja a négy napos előrejelzést, segítve a felhasználókat a jövőbeli időjárás megértésében.
 
-Az webalkalmazás fókuszában a felhasználói élmény és az egyszerűség áll, így mindenki könnyedén használhatja bármely platformon, legyen az számítógép, tablet vagy telefon. Az ingyenes elérhetőség lehetővé teszi bárki számára, hogy naprakész időjárási adatokhoz jusson. Az webalkalmazás kártya alapú megjelenítésével a felhasználók gyorsan és könnyen áttekinthetik az időjárási információkat.
+A webalkalmazás fókuszában a felhasználói élmény és az egyszerűség áll, így mindenki könnyedén használhatja bármely platformon, legyen az számítógép, tablet vagy telefon. Az ingyenes elérhetőség lehetővé teszi bárki számára, hogy naprakész időjárási adatokhoz jusson. A webalkalmazás kártya alapú megjelenítésével a felhasználók gyorsan és könnyen áttekinthetik az időjárási információkat.
 
 ## Projektterv
 
