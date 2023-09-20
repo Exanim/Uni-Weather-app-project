@@ -1,17 +1,16 @@
 # Rendszerterv
 
-A rendszer célja aktuális regionális időjárási adatok hozzáférésének biztosítása.
-A felhasználónak lehetőséget ad bizonyos települések időjárási adatainak elmentésére.
-Kizárólag PC-ről elérhető webes felület van tervben.
-
 ## A rendszer célja
 
+A rendszer célja aktuális regionális időjárási adatok hozzáférésének biztosítása.
+A felhasználónak lehetőséget ad bizonyos települések időjárási adatainak elmentésére.
 A Weather webapplikáció célja az, hogy a felhasználók számára könnyen és gyorsan hozzáférhetővé tegye az időjárási információkat.
+
 A webalkalmazás lehetővé teszi a felhasználók számára, hogy egyszerűen megkeressék a kívánt helyszínt a kereső funkció használatával, és biztosítja az időjárási adatok megjelenítését kártyák formájában.
 Az első kártya kiemelt módon mutatja be az aktuális hőmérsékletet, míg a további kártya grafikusan ábrázolja a négy napos előrejelzést, segítve a felhasználókat a jövőbeli időjárás megértésében.
 
-A webalkalmazás fókuszában a felhasználói élmény és az egyszerűség áll, így mindenki könnyedén használhatja bármely platformon, legyen az számítógép, tablet vagy telefon. 
-Az ingyenes elérhetőség lehetővé teszi bárki számára, hogy naprakész időjárási adatokhoz jusson. 
+A webalkalmazás fókuszában a felhasználói élmény és az egyszerűség áll, így mindenki könnyedén használhatja bármely platformon, legyen az számítógép, tablet vagy telefon.
+Az ingyenes elérhetőség lehetővé teszi bárki számára, hogy naprakész időjárási adatokhoz jusson.
 A webalkalmazás kártya alapú megjelenítésével a felhasználók gyorsan és könnyen áttekinthetik az időjárási információkat.
 
 ## Projektterv
@@ -27,6 +26,11 @@ A webalkalmazás kártya alapú megjelenítésével a felhasználók gyorsan és
 
 ### Ütemterv
 
+- Projekt kezdet: 2023. szeptember 20.
+- Frontend fejlesztés kezdete: 2023. szeptember 21.
+- Tesztelés kezdete: 2023. szeptember 24.
+- Végleges verzió kiadása: 2023. szeptember 24.
+
 | Funkció      | Feladat                        | Prioritás | Becslés (h) | Eltelt Idő (h) | Hátralévő idő (h) |
 |--------------|--------------------------------|-----------|-------------|----------------|-------------------|
 | KövSpec      |                                | 0         | 4           | 3              | 1                 |
@@ -35,6 +39,7 @@ A webalkalmazás kártya alapú megjelenítésével a felhasználók gyorsan és
 | WebApp       | Felület stílus elkészítése     | 1         | 8           | 0              | 8                 |
 |              | Felület Controller Elkészítése | 2         | 6           | 0              | 6                 | 
 
+### Mérfölkövek
 
 ## Üzleti folyamatok modellje
 
@@ -56,23 +61,63 @@ Az eseményt az alkalmazás felhasználói felülete indítja.
    - Output: Lekérdezni kívánt város időjárási adatai 5 napra előrejósolva
    - Szereplők: Felhasználó
 
+2. **Backend Adatfeldolgozás:** A rendszer által lekért időjárási adatok feldolgozása és továbbítása a
+frontend felé.
+Az eseményt a Backend API indítja.
+    - Input: Időjárási adatok
+    - Output: Feldolgozott időjárási adatok
+    - Szereplők: Backend API, Felhasználó
+
 ## Követelmények
 
 ### Funkcionális követelmények
 
 > ### Megtekinteni kivánt város adatainak megjelenítése
-> 
+>
 > *Röviden*: Az alkalmazásnak könnyen értelmezhető módon kell megjelenítenie az adatokat.
-> 
+>
 > Célunk, hogy minden felhasználó könnyen és akadálymentesen hozzáférjen az időjárási adatokhoz.
 
 > ###  Tetszőleges város adatainak lekérdezése
-> 
+>
 > *Röviden*: Az alkalmazásnak akadálymentes módszert kell adnia a felhasználónak az általa kiválasztott város időjárási adatainak megjelenítésére.
-> 
+>
 > Célunk, hogy minden felhasználó képes legyen váltogatni tetszőleges városok adatai között.
 
+### Nemfunkcionális követelmények
+
+> ### A webalkalmazás gyors és reszponzív működése.
+>*Röviden*: Célunk, hogy az alkalmazásunk működése során semmilyen sebességi
+> valamint eszközkülönbségi tényező ne folyásolja be a felhasználói élményt.
+>
+> ### Kompatibilitás különböző böngészőkkel.
+> *Röviden*: Célunk, hogy a felhasználó az általa preferált böngészőben tőlünk függetlenül is futtatni tudja
+> az alkalmazásunkat.
+
+### Törvényi előírások, szabványok
+- Adatvédelmi jogszabályok betartása.
+- GDPR követelmények teljesítése.
+
 ## Funkcionális terv
+
+### Rendszerszereplők
+
+- Felhasználók: A rendszer végfelhasználói, akik használják az alkalmazást.
+
+### Rendszer használati esetek és lefutásaik
+
+#### Város keresése
+
+   - A felhasználó megadja a keresett város nevét.
+
+   - A rendszer lekéri a város időjárási adatait.
+
+   - Az adatok megjelenítése a felhasználónak.
+
+### Határ osztályok
+- Felhasználói felület: A webes alkalmazás felhasználói felülete.
+
+- Backend API: Az időjárási adatok lekérdezéséért és feldolgozásáért felelős komponens.
 
 ### Menühierarchia
 ```mermaid
@@ -86,6 +131,37 @@ flowchart TD
     func([Funkció])
     menu[Menü]
 ```
+
+### Képernyőterv:
+- Keresési sáv
+- Keresőgomb nagyító megjelenítéssel
+- Város keresési eredmények
+- Időjárás részletek
+![](../kepernyotervek/sc-plan-v2.png)
+
+## Rendszerarchitechtúra
+
+Az alkalmazás a következő részekből fog állni:
+
+- **Frontend:** Felhasználói felület, amely a böngészőben fut és lehetővé teszi a felhasználók számára az
+időjárási adatok megtekintését és a városok keresését.
+
+- **Backend:** Az időjárási adatok lekérdezéséért és feldolgozásáért felelős rész, az OpenWeather API,
+mely biztosítja a frontend felé az adatokat.
+
+## Felhasználói felület tervezési minták
+- Az alkalmazás felhasználói felülete könnyen értelmezhető és felhasználóbarát lesz, hogy a felhasználók gyorsan megtalálják az időjárási információkat.
+
+## Backend API
+- Az alkalmazás az OpenWeather RESTful API- ját használja, hogy a front-enden történő interakciókat
+és megjelenítések fel legyenek dolgozva.
+- Ez az API képes visszaküldeni az aktuális időjárselőrejelzési adatokat megfelelő HTTP kérésekre.
+
+## Tesztterv
+A tesztelések célja a rendszer és komponensei megfelelő működésének ellenőrzése, vizsgálata. A tesztelések
+magukban foglalják a frontend és backend egységteszteket, valamint az integrációs teszteket a rendszer
+egészének ellenőrzésére.
+
 ## Fizikai környezet
 
 - Az alkalmazás kizárólag PC-ről használt webes felületre készül.
@@ -96,14 +172,26 @@ flowchart TD
   - Visual Studio Code
   - Paint.NET
 
+## Absztrakt domain modell
+
+Az alkalmazás absztrakt domain modelljének leírása.
+
+- Felhasználók: A rendszerben regisztrált felhasználók.
+- Városok: Az alkalmazás által kezelt városok és az azokhoz tartozó időjárási adatok.
+- Adminisztrátorok: Az adminisztrátori jogosultsággal rendelkező felhasználók.
+
 ## Implementációs terv
 
 A webes felület HTML, CSS és TypeScript nyelveken fog elkészülni a [Weather API](https://openweathermap.org/api)-t felhasználva.
 A rendszer fájlrendszere jelentősen szét lesz szórva az egyszerűbb kiegészítés és a könnyebb értelmezés végett.
 
-A webes felület elkészítése HTML, CSS, JavaScript és TypeScript nyelveken történik, az Angular keretrendszer segítségével. A kódot több különálló fájlban készítjük el, hogy növeljük az átláthatóságot és a könnyebb fejlesztést. A HTML felel a felület struktúrájáért, a CSS a stílusért, míg a JavaScript és TypeScript a dinamikus funkcionalitásért.
+A webes felület elkészítése HTML, CSS, JavaScript és TypeScript nyelveken történik, az Angular keretrendszer
+segítségével. A kódot több különálló fájlban készítjük el, hogy növeljük az átláthatóságot és a könnyebb
+fejlesztést. A HTML felel a felület struktúrájáért, a CSS a stílusért, míg a JavaScript és TypeScript a dinamikus
+funkcionalitásért.
 
-A webes felület képes lesz kommunikálni a [Weather API](https://openweathermap.org/api) által nyújtott végpontokkal, ami lehetővé teszi a naprakész időjárási adatok lekérdezését.
+A webes felület képes lesz kommunikálni a [Weather API](https://openweathermap.org/api) által nyújtott végpontokkal, ami lehetővé teszi a
+naprakész időjárási adatok lekérdezését.
 
 ## Tesztterv
 
@@ -113,6 +201,4 @@ A tesztelések célja a rendszer és komponensei megfelelő működésének elle
 
 - Android/IOS: nincs tervben
 - Webes alkalmazás: Az alkalmazás megtekintéséhez szükséges **egy** az ajánlott böngészők közül:
-Google Chrome, Mozilla Firefox, Opera 
-
-
+Google Chrome, Mozilla Firefox, Opera
