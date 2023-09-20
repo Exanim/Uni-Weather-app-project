@@ -10,29 +10,40 @@ Kizárólag PC-ről elérhető webes felület van tervben.
 
 ## Projektterv
 
+
+
 ### Projekt szerepkörök
 
-| Név       | Szerepkör | Feladat           |
-|-------------|-----------|-------------------|
+| Név           | Szerepkör  | Feladat           |
+|---------------|------------|-------------------|
 | Gyenes Balázs | Programozó | Frontend Controll |
-| Baráth Simon | Programozó | N/A               |
+| Baráth Simon  | Programozó | N/A               |
 | Brázda Martin | Programozó | Frontend Style    |
-| Deák Erik   | Programozó | N/A               |
+| Deák Erik     | Programozó | N/A               |
 
 ### Ütemterv
 
-| Funkció | Feladat                        | Prioritás | Becslés (h) | Eltelt Idő (h) | Hátralévő idő (h) |
-|---------|--------------------------------|-----------|-------------|----------------|-------------------|
-|KövSpec|                                | 0         | 4           | 1              | 3                 |
-|FunkSpec|                                | 0         | 4           | 1              | 3                 |
-|Rendszerterv|                                | 0         | 4           | 1              | 3                 |
-| WebApp | Felület stílus elkészítése     | 1         | 8           | 0              | 8                 |
-| | Felület Controller Elkészítése | 2         | 6           | 0              | 6                 | 
+| Funkció      | Feladat                        | Prioritás | Becslés (h) | Eltelt Idő (h) | Hátralévő idő (h) |
+|--------------|--------------------------------|-----------|-------------|----------------|-------------------|
+| KövSpec      |                                | 0         | 4           | 1              | 3                 |
+| FunkSpec     |                                | 0         | 4           | 1              | 3                 |
+| Rendszerterv |                                | 0         | 4           | 1              | 3                 |
+| WebApp       | Felület stílus elkészítése     | 1         | 8           | 0              | 8                 |
+|              | Felület Controller Elkészítése | 2         | 6           | 0              | 6                 | 
 
 
 ## Üzleti folyamatok modellje
 
+### Üzleti szereplők
 
+1. Felhasználó: Az alacsony jogosultágokkal rendelkező felhasználó, aki használja az alkalmazást az időjárás lekérdezéséhez.
+2. Adminisztrátor: Adminisztrátorok magasabb jogosultsági szintel rendelkező felhasználók az alábbi feladatok ellátása végett:
+   
+   - Problémák kezelése: Jelenlegi problémák, panaszok, visszajelzések kezelése.
+   - Renszerkarbantartás: Biztonsági mentések rendeltetés szerű készítése, a rendszer teljesítményének optimalizálása.
+   - Kommunikáció: Rendszeres kommunikálás a felhasználókkal: válasz felhasználók kéréseire, kérdéseire.
+
+### Üzleti folyamatok
 
 ## Követelmények
 
@@ -43,12 +54,8 @@ Kizárólag PC-ről elérhető webes felület van tervben.
 ### Menühierarchia
 ```mermaid
 flowchart TD
-  Menu --> clearAll([Clear All])
-  Menu --> savedCities[Saved Cities]
-  Menu --> addCity([Add City])
-  addCity --> addCityMenu[Add City Menu]
-  savedCities --> editExisting([Edit])
-  savedCities --> deleteExisiting([Delete])
+  Menu --> dataCard[Data Card]
+  Menu --> search([Search])
 ```
 ```mermaid
 flowchart TD
