@@ -36,22 +36,32 @@ feliratkozói díjazás csökkentik a felhasználói élményt.
 
 ### Követelménylista
 - Kártya jellegű megjelenítés, ahol a mai és a következő 4 nap előre látható / jelenlegi időjárása megjelenik
+
 - A kártyák tartalmazzanak egy napocskát, amennyiben az idő napos, valamint egy felhőt, amennyiben felhős
+
 - Ezen felül, amennyiben az idő esős, a felhőcskékből láthatóan csepegjenek esőcseppek
+
 - ...amennyiben borús, fekete legyen a felhő
+
 - Az égen látható információ egy fehér karikában jelenjen meg
+
 - A kártyák tartalmazzák továbbá az adott napot, melyre megjelenik az időjárás a fehér karika alatt
+
 - Mindezek alatt, a kártya alján jelenjen meg a páratartalom százalékosan valamint a széljárás ereje
 
 
 ### A rendszer céljai és nem céljai
 - Egy olyan felület létrehozása, amely intuitívan kezelhető
+
 - Órákra bontott információ az aznapi hőmérsékletekről
+
 - Jelenlegi szélerősség a felhasználó által választott településeken
 
 Nem céljai:
 - Hosszú távú előrejelzés
+
 - Műholdas hőtérkép a hideg és meleg frontokról
+
 - Óceáni áramlatok műholdas térképen való ábrázolása
 
 
@@ -112,31 +122,40 @@ felhasználók kezdőképernyőjén.
 egy nagyító gombot, mellyel az intuíciója sugallata szerint az lesz a "Keresés" gomb, melyre rá kell
 nyomnia, hogy az előtte lévő keresősorba beírt adatot fel tudja dolgozni az alkalmazás. Az egész lila-kék alapú
 háttéren helyezkedik el, hogy hangsúlyozza a hideg színeket.
+
 2. Következő lépésként a felhasználó beír egy városnevet a keresőbe.
+
 3. A felhasználó lenyomja az entert, vagy rányom a nagyító gombra, ezáltal beküldi a beadott adatokat.
+
 4. A front-end validátorok segítségével meghatározza, hogy az input megfelelő-e.
 Amennyiben megfelelő, továbbküldi a back-endnek (API), mely feldolgozza az adatot, elvégzi
 a szükséges műveleteket az adattal és visszaküldi a front-end részére, továbbértékelés céljából a már
 front-end részére is értelmezhető és felhasználó számára továbbítható adatokat.
-5. A felhasználó előtt elsősorban megjelenik az általa beírt település neve
-6. Ezt követően egyesével megjelennek szépen lassan a jelenlegi nap, valamint a négy következő nap
+
+1. A felhasználó előtt elsősorban megjelenik az általa beírt település neve
+
+2. Ezt követően egyesével megjelennek szépen lassan a jelenlegi nap, valamint a négy következő nap
 időjárásjelentései.
 
 
 ### Fogalomszótár
 - ***Kártya:*** kártyaszerű megjelenítése az alkalmazáson belül megjelenő napoknak
+
 - ***Front-end:*** amit a weboldalon látni lehet: funkciók, dizájnelemek, felépítés. A weboldalak és
 webalkalmazások látható és interaktív részére vonatkozik. A front-end az az aspektus, amelyet a
 felhasználó közvetlenül észlel és használ, amikor egy weboldalt vagy alkalmazást használ.
+
 - ***Back-end:*** A back-end az alkalmazásnak az a része, amely a háttérben fut és kezeli az adatokat, az
 üzleti logikát, valamint a szerveroldali műveleteket. Röviden, a back-end az alkalmazás motorja, amely
 a front-end (a látható és interaktív rész) mögött dolgozik, és lehetővé teszi az alkalmazás funkcióit és
 adatszolgáltatásait. A back-end felelős az adatbázisokhoz, külső rendszerekhez és a felhasználók
 közötti adatkommunikációhoz való kapcsolódásért is.
+
 - ***API:*** _„Application Programming Interface”_ egy interfész vagy közvetítő réteg, amely lehetővé teszi két
 különböző szoftveralkalmazásnak vagy rendszernek, hogy kommunikáljon egymással. Az API
 meghatározza, hogy hogyan lehet kérni bizonyos funkciókat vagy adatokat egy alkalmazástól, és
 hogyan adja vissza az eredményeket.
+
 - ***HTTP kérések:*** A HTTP kérés egy olyan üzenet, amit a böngésző vagy egy másik kliens küld a web
 szervernek, amikor egy weboldalt vagy erőforrást (pl. HTML dokumentumot) kér le. Az HTTP kérés
 tartalmazza a kérés típusát (GET, POST stb.), a kért erőforrás URL-jét és egyéb metainformációkat. A mi
