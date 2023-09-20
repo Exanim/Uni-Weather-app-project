@@ -79,6 +79,7 @@ Az eseményt az alkalmazás felhasználói felülete indítja.
 flowchart TD
   Menu --> dataCard[Data Card]
   Menu --> search([Search])
+  search --> searchMenu[Search Menu]
 ```
 ```mermaid
 flowchart TD
