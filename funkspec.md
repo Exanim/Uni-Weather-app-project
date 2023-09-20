@@ -1,10 +1,5 @@
 # Funkcionális specifikáció
 
-### Áttekintés
-A Weather app egy olyan alkalmazás, amely lehetővé teszi a felhasználók számára, hogy könnyen és gyorsan hozzáférjenek az időjárási információkhoz. Az alkalmazás kártyákon jeleníti meg az időjárási adatokat, amelyek közül az első kártyán az aktuális hőmérséklet kap kiemelt szerepet. A további négy kártya grafikus formában mutatja be az előrejelzéseket a következő napokra, segítve a felhasználókat a jövőbeli időjárás feltételeinek jobb megértésében.
-
-Az alkalmazás felhasználóbarát és könnyen használható, és a felhasználók bármely platformon, legyen az számítógép, tablet vagy telefon, gyorsan megtalálják a kívánt helyszín időjárását. Az ingyenes elérhetőség lehetővé teszi bárki számára, hogy naprakész időjárási adatokhoz jusson. Az alkalmazás a funkcionalitásra és a felhasználói élményre összpontosít, hogy egyszerűsítse az időjárásinformációk elérését és használatát.
-
 ### Jelenlegi helyzet leírása
 Rohanó információéhes világunk óhatatlanul vágyik arra, hogy a környező történésekről mindent - és ezalatt értsd:
 MINDENT - tudnia kell a benne élő embereknek. A mi alkalmazásunk ebben segít és szükséges információkat közöl az
@@ -30,7 +25,7 @@ feliratkozói díjazás csökkentik a felhasználói élményt.
 - A kártyák tartalmazzák továbbá az adott napot, melyre megjelenik az időjárás a fehér karika alatt
 - Mindezek alatt, a kártya alján jelenjen meg a páratartalom százalékosan valamint a széljárás ereje
 
-  
+
 ### A rendszer céljai és nem céljai
 - Egy olyan felület létrehozása, amelye intuitívan kezelhető
 - Órákra bontott információ az aznapi hőmérsékletekről
@@ -41,7 +36,7 @@ Nem céljai:
 - Műholdas hőtérkép a hideg és meleg frontokról
 - Óceáni áramlatok műholdas térképen való ábrázolása
 
- 
+
 ### Vágyálomrendszer leírása
 Ingyenes weboldalunk célja, hogy ügyfeleink átlátható, naprakész, percre pontos információhoz jussanak, hogy ne érhessék
 meglepetések utazás, kirándulás esetében. És, hogy tudják, mikor hogyan kell öltözködniük és mit kell magukkal vinniük
