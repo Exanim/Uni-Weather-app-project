@@ -36,7 +36,7 @@ A webalkalmazás kártya alapú megjelenítésével a felhasználók gyorsan és
 | KövSpec      |                                | 0         | 4           | 3              | 1                 |
 | FunkSpec     |                                | 0         | 4           | 3              | 1                 |
 | Rendszerterv |                                | 0         | 4           | 3              | 1                 |
-| WebApp       | Felület stílus elkészítése     | 1         | 8           | 0              | 8                 |
+| WebApp       | Felület stílus elkészítése     | 1         | 8           | 4              | 4                 |
 |              | Felület Controller Elkészítése | 2         | 6           | 0              | 6                 | 
 
 ### Mérfölkövek
