@@ -10,7 +10,7 @@ export class DataStorageService {
   cityName: string = '';
 
   apiKey = '8d9445cab37f8906d9588c8b9977dd08';
-  geoLocatorUrl = `http://api.openweathermap.org/geo/1.0/direct?q=${this.cityName}&appid=${this.apiKey}`;
+  geoLocatorUrl = '';
 
   getGeoLocationByCityName(cityName: string) {
     this.cityName = cityName;

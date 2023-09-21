@@ -84,20 +84,20 @@ body {
   align-items: flex-start;
 }
 
-@keyframes fade{
-  from{
+@keyframes fade {
+  from {
     opacity: 0;
   }
-  to{
+  to {
     opacity: 1;
   }
 }
 
-.card::after{
+.card::after {
   opacity: 1;
 }
 
-.details{
+.details {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -105,7 +105,7 @@ body {
   margin-top: 50px;
 }
 
-.city{
+.city {
   user-select: none;
   text-align: right;
   font-size: 40px;
