@@ -171,6 +171,8 @@ egészének ellenőrzésére.
   - Jetbrains Intellij IDEA
   - Visual Studio Code
   - Paint.NET
+  - Node.JS
+  - Angular
 
 ## Absztrakt domain modell
 
