@@ -5,9 +5,9 @@ import { Card } from './card/card.model';
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css']
+  styleUrls: ['./app.component.css'],
 })
-export class AppComponent implements OnInit{
+export class AppComponent implements OnInit {
   title = 'Weather Webapp';
   cards: Card[] = [];
 
@@ -15,5 +15,5 @@ export class AppComponent implements OnInit{
     this.cards = this.cardData.getCardsData();
   }
 
-  constructor(private cardData: CardDataService){}
+  constructor(private cardData: CardDataService) {}
 }

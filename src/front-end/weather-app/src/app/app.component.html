@@ -18,7 +18,9 @@
       </button>
     </div>
     <div class="pack">
-      <div class="card" *ngFor="let card of cards"><app-card [card]="card"></app-card></div>
+      <div class="card" *ngFor="let card of cards">
+        <app-card [card]="card"></app-card>
+      </div>
     </div>
   </div>
 </body>
