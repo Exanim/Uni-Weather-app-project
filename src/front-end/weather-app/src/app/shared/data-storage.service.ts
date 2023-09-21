@@ -30,14 +30,11 @@ export class DataStorageService {
       .subscribe((filteredData) => {
         this.lat = filteredData.lat;
         this.lon = filteredData.lon;
+        this.getWeatherInformationByGeoData(cityName);
       });
   }
 
   getWeatherInformationByGeoData(cityName: string) {
-    this.getGeoLocationByCityName(cityName);
-    setTimeout(() => {
-      console.log(this.lat + this.lon);
-    }, 100);
     const forecastUrl = `http://api.openweathermap.org/data/2.5/forecast?lat=${this.lat}&lon=${this.lon}&appid=${this.apiKey}`;
     this.http.get(forecastUrl).subscribe((response) => console.log(response));
   }
