@@ -11,6 +11,7 @@ export class AppComponent implements OnInit {
   title = 'Weather Webapp';
   cards?: Card[];
   city?: string;
+  fetchedCityName?: string;
 
   ngOnInit(): void {
     this.cards = this.cardData.getCardsData();
@@ -20,6 +21,7 @@ export class AppComponent implements OnInit {
 
   onLookUpCity() {
     console.log(this.city);
+    this.fetchedCityName = this.city;
     this.city = '';
   }
 }
