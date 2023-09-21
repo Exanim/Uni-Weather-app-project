@@ -85,8 +85,7 @@ A keresésgomb lenyomásakor az alkalmazás kiírja a felületre a fent említet
 
 ```mermaid
 flowchart LR
-    user -- add new city --> app{{WebApp}} -- get city info --> api{API}
-    api -- return city info --> app -- display added city info --> user
-    app -- save city info till the end of session --> app
+    user -- select city --> app{{WebApp}} -- get city info --> api{API}
+    api -- return city info --> app -- display selected city info --> user
 ```
 ---
