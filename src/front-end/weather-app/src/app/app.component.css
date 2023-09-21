@@ -1,14 +1,14 @@
 * {
   margin: 0;
   padding: 0;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 
 body {
   background: #252525;
 }
 
-.main{
+.main {
   width: 90%;
   max-width: 470px;
   background: linear-gradient(135deg, #167aff, #a901ff);
@@ -19,14 +19,14 @@ body {
   text-align: center;
 }
 
-.search{
+.search {
   width: 100%;
   display: flex;
   align-items: flex-start;
   justify-content: space-between;
 }
 
-.search input{
+.search input {
   border: 0;
   outline: 0;
   background-color: #ebfffc;
@@ -39,7 +39,7 @@ body {
   font-size: 18px;
 }
 
-.search button{
+.search button {
   border: 0;
   outline: 0;
   background: #ebfffc;
@@ -65,18 +65,18 @@ body {
   animation-fill-mode: forwards;
 }
 
-.weather-icon{
+.weather-icon {
   width: 110px;
   margin-top: 30px;
 }
 
-.day{
+.day {
   font-size: 60px;
   font-weight: 500;
   margin-top: 20px;
 }
 
-.pack{
+.pack {
   width: 100%;
   margin: 20px auto;
   display: flex;
