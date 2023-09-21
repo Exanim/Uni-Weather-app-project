@@ -1,8 +1,13 @@
 <body>
   <div class="main">
     <div class="search">
-      <input type="text" placeholder="select a city" spellcheck="false" />
-      <button>
+      <input
+        [(ngModel)]="city"
+        type="text"
+        placeholder="select a city"
+        spellcheck="false"
+      />
+      <button (click)="onLookUpCity()">
         <svg
           xmlns="http://www.w3.org/2000/svg"
           x="0px"
@@ -18,8 +23,8 @@
       </button>
     </div>
     <div class="pack">
-      <div class="card" *ngFor="let card of cards">
-        <app-card [card]="card"></app-card>
+      <div class="card" *ngFor="let cardElement of cards">
+        <app-card [card]="cardElement"></app-card>
       </div>
     </div>
   </div>

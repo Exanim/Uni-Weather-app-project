@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ViewChild } from '@angular/core';
 import { CardDataService } from './card/card-data.service';
 import { Card } from './card/card.model';
 
@@ -9,11 +9,17 @@ import { Card } from './card/card.model';
 })
 export class AppComponent implements OnInit {
   title = 'Weather Webapp';
-  cards: Card[] = [];
+  cards?: Card[];
+  city?:string;
 
   ngOnInit(): void {
     this.cards = this.cardData.getCardsData();
   }
 
   constructor(private cardData: CardDataService) {}
+
+  onLookUpCity(){
+    console.log(this.city);
+    this.city = '';
+  }
 }
