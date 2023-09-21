@@ -8,19 +8,15 @@ import { map } from 'rxjs';
 export class DataStorageService {
   constructor(private http: HttpClient) {}
 
-  cityName: string = '';
-
   apiKey = '8d9445cab37f8906d9588c8b9977dd08';
-  geoLocatorUrl = '';
   fiveDaysForeCastUrl = '';
   lat = 0;
   lon = 0;
 
   getGeoLocationByCityName(cityName: string) {
-    this.cityName = cityName;
-    this.geoLocatorUrl = `http://api.openweathermap.org/geo/1.0/direct?q=${this.cityName}&appid=${this.apiKey}`;
+    const geoLocatorUrl = `http://api.openweathermap.org/geo/1.0/direct?q=${cityName}&appid=${this.apiKey}`;
     this.http
-      .get<{ lat: number; lon: number }[]>(this.geoLocatorUrl)
+      .get<{ lat: number; lon: number }[]>(geoLocatorUrl)
       .pipe(
         map((response) => {
           if (response.length > 0) {
@@ -34,8 +30,15 @@ export class DataStorageService {
       .subscribe((filteredData) => {
         this.lat = filteredData.lat;
         this.lon = filteredData.lon;
-        console.log(this.lat);
-        console.log(this.lon);
       });
+  }
+
+  getWeatherInformationByGeoData(cityName: string) {
+    this.getGeoLocationByCityName(cityName);
+    setTimeout(() => {
+      console.log(this.lat + this.lon);
+    }, 100);
+    const forecastUrl = `http://api.openweathermap.org/data/2.5/forecast?lat=${this.lat}&lon=${this.lon}&appid=${this.apiKey}`;
+    this.http.get(forecastUrl).subscribe((response) => console.log(response));
   }
 }

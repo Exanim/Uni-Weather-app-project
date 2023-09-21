@@ -24,7 +24,7 @@ export class AppComponent implements OnInit {
   ) {}
 
   onLookUpCity() {
-    this.dataStorage.getGeoLocationByCityName(this.city);
+    this.dataStorage.getWeatherInformationByGeoData(this.city);
     console.log(this.city);
     this.fetchedCityName = this.city;
     this.city = '';
