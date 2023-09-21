@@ -20,6 +20,27 @@ export class CardDataService {
       20,
       10
     ),
+    new Card(
+      'Tue',
+      'https://img.icons8.com/?size=128&id=5wSfjHD2HPMD&format=png',
+      32,
+      20,
+      10
+    ),
+    new Card(
+      'Tue',
+      'https://img.icons8.com/?size=128&id=5wSfjHD2HPMD&format=png',
+      32,
+      20,
+      10
+    ),
+    new Card(
+      'Tue',
+      'https://img.icons8.com/?size=128&id=5wSfjHD2HPMD&format=png',
+      32,
+      20,
+      10
+    ),
   ];
 
   constructor() {}
