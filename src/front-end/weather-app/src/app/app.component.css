@@ -50,7 +50,7 @@ body {
 }
 
 .card {
-  width: 90%;
+  width: 100%;
   max-width: 250px;
   background: rgba(153, 153, 153, 0.4);
   border-radius: 45px;
@@ -58,6 +58,11 @@ body {
   padding-bottom: 30px;
   user-select: none;
   margin-right: 20px;
+  opacity: 0;
+  animation-delay: 1s;
+  animation-duration: 1s;
+  animation-name: fade;
+  animation-fill-mode: forwards;
 }
 
 .weather-icon{
@@ -77,4 +82,17 @@ body {
   display: flex;
   align-items: flex-start;
   justify-content: space-between;
+}
+
+@keyframes fade{
+  from{
+    opacity: 0;
+  }
+  to{
+    opacity: 1;
+  }
+}
+
+.card::after{
+  opacity: 1;
 }
