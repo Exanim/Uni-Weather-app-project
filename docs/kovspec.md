@@ -20,6 +20,37 @@ utazásokra. Az alkalmazásnak könnyen üzemeltethetőnek kell lennie. Az onlin
 kell lennie, hogy mobil / tablet illetve számítógép eszközökön is szépen, jól láthatóan megjelenített legyen. Elvárt a
 platformfüggetlenség, nem elfogadható, ha csak egy operációs rendszeren futtatható az alkalmazás.
 
+#### További vágyálmok:
+
+- Engedélyezni a felhasználoknak, hogy beállítsák az időjárási riasztásokat, például eső vagy hó előrejelzés
+esetén. Ez segíthet nekik felkészülni az időjárás változásaira.
+
+- A kártyákon kívül engedélyezni a felhasználóknak, hogy kattintsanak a napi időjárási részletekre, és
+lássák a részletes időjárási előrejelzést, például a páratartalmat, a napnyugtát és a napkelte idejét.
+
+- Adatokat szolgáltathatunk a légköri viszonyokról, például a légszennyezettségi szintekről vagy a
+pollenkoncentrációról, amelyek hasznosak lehetnek az allergiásoknak és az egészségüket figyelő
+felhasználóknak.
+
+- Időjárási térképek: térképek feltöltése az alkalmazásba, amelyeken megjelenik a radar és a
+hőmérsékleti térkép. Ezen térképek segítségével a felhasználók könnyen áttekinthetik az időjárási
+körülményeket.
+
+- Engedélyezés a felhasználóknak, hogy megosszák az időjárási információkat közösségi média
+platformokon, így további felhasználókat vonzhatnak  az alkalmazáshoz.
+
+- Felhasználói visszajelzés és értékelések kérése a felhasználóktól, hogy folyamatosan fejlesztő legyen az
+alkalmazás és jobb élményt nyújthassunk.
+
+- Offline használat biztosítása, hogy a felhasználók hozzáférhessenek az időjárási információkhoz,
+amikor nincs internetkapcsolatuk.
+
+- Élő háttérképek az időjárási körülményeknek megfelelően, így az alkalmazás vizuálisan is érdekes
+legyen.
+
+- Widgeteket fejlesztése, amelyek lehetővé teszik az időjárás információinak gyors megtekintését a
+felhasználók kezdőképernyőjén.
+
 
 ### Jelenlegi üzleti folyamatok:
 
@@ -30,7 +61,7 @@ települést.
 A felhasználó egy különböző elemekből felépített felületet lásson, melyen dinamikusan megjelenik az aktuális település
 időjárása.
 #### Szükséges időjárásadatok közlése:
-Az alkalmazás tartalmazza az időjárásolvasáshoz szükséges összes adatot például: hőmérséklet, település neve, százalékos 
+Az alkalmazás tartalmazza az időjárásolvasáshoz szükséges összes adatot például: hőmérséklet, település neve, százalékos
 páratartalom valamint a szél sebessége
 #### Felhasználói interakciók feldolgozásáért felelős információinput
 Szükséges az alkalmazásnak tartalmaznia egy keresősávot, valamint a keresősávhoz egy megfelelő "Keresés" gombot.
