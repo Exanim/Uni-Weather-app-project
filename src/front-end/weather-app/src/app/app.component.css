@@ -53,8 +53,7 @@ body {
 }
 
 .card {
-  width: 100%;
-  max-width: 250px;
+  width: 250px;
   background: rgba(153, 153, 153, 0.4);
   border-radius: 45px;
   color: #252525;
@@ -80,11 +79,10 @@ body {
 }
 
 .pack {
-  width: 100%;
+  width: 960px;
   margin: 20px auto;
   display: flex;
   align-items: flex-start;
-  justify-content: space-between;
 }
 
 @keyframes fade{
