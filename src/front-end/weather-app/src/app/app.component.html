@@ -21,8 +21,8 @@
           ></path>
         </svg>
       </button>
-      <div class="city">Los Angeles</div>
-    </div>    
+      <div class="city">{{fetchedCityName}}</div>
+    </div>
     <div class="pack">
       <div class="card" *ngFor="let cardElement of cards">
         <app-card [card]="cardElement"></app-card>
