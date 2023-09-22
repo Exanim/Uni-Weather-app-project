@@ -16,6 +16,9 @@ export class AppComponent implements OnInit {
 
   ngOnInit(): void {
     this.cards = this.cardData.getCardsData();
+    this.cardData.onWeatherChanged.subscribe(
+      (cardData) => (this.cards = cardData)
+    );
   }
 
   constructor(
