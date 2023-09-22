@@ -48,7 +48,7 @@ export class DataStorageService {
             humidity: item.main.humidity,
             weather: item.weather[0].main,
             windSpeed: item.wind.speed,
-          }))
+          })).filter((item: any) => item.dt_txt.charAt(11) === '1' && item.dt_txt.charAt(12) === '2')
         )
       )
       .subscribe((filteredResponse) => console.log(filteredResponse));
