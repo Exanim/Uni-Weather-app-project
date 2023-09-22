@@ -9,7 +9,6 @@ export class DataStorageService {
   constructor(private http: HttpClient) {}
 
   apiKey = '8d9445cab37f8906d9588c8b9977dd08';
-  fiveDaysForeCastUrl = '';
   lat = 0;
   lon = 0;
 
@@ -30,11 +29,11 @@ export class DataStorageService {
       .subscribe((filteredData) => {
         this.lat = filteredData.lat;
         this.lon = filteredData.lon;
-        this.getWeatherInformationByGeoData(cityName);
+        this.getWeatherInformationByGeoData();
       });
   }
 
-  getWeatherInformationByGeoData(cityName: string) {
+  getWeatherInformationByGeoData() {
     const forecastUrl = `http://api.openweathermap.org/data/2.5/forecast?lat=${this.lat}&lon=${this.lon}&appid=${this.apiKey}`;
     this.http.get(forecastUrl).subscribe((response) => console.log(response));
   }
