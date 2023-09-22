@@ -32,7 +32,6 @@ export class DataStorageService {
       .subscribe((filteredData) => {
         this.lat = filteredData.lat;
         this.lon = filteredData.lon;
-        console.log(this.lat, this.lon);
         this.getWeatherInformationByGeoData();
       });
   }
@@ -58,7 +57,6 @@ export class DataStorageService {
         )
       )
       .subscribe((filteredResponse) => {
-        console.log(filteredResponse);
         this.cardData.setCardsData(filteredResponse);
       });
   }
