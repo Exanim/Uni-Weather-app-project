@@ -1,5 +1,5 @@
 import { HttpClient } from '@angular/common/http';
-import { Injectable } from '@angular/core';
+import { EventEmitter, Injectable } from '@angular/core';
 import { map } from 'rxjs';
 import { Weather } from './weather.model';
 import { GetAll, List } from './get-all.model';
@@ -14,6 +14,7 @@ export class DataStorageService {
   apiKey = '8d9445cab37f8906d9588c8b9977dd08';
   lat = 0;
   lon = 0;
+  onFetchError: EventEmitter<string> = new EventEmitter<string>();
 
   getGeoLocationByCityName(cityName: string) {
     const geoLocatorUrl = `http://api.openweathermap.org/geo/1.0/direct?q=${cityName}&appid=${this.apiKey}`;
@@ -25,7 +26,9 @@ export class DataStorageService {
             const { lat, lon } = response[0];
             return { lat, lon };
           } else {
-            throw new Error('Nincs válasz a városra');
+            const errorMessage = 'Nincs válasz a városra'
+            this.onFetchError.next(errorMessage);
+            throw new Error(errorMessage);
           }
         })
       )

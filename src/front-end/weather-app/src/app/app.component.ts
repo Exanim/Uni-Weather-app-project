@@ -19,6 +19,9 @@ export class AppComponent implements OnInit {
     this.cardData.onWeatherChanged.subscribe(
       (cardData) => (this.cards = cardData)
     );
+    this.dataStorage.onFetchError.subscribe(
+      (errorMessage) => (this.fetchedCityName = errorMessage)
+    );
   }
 
   constructor(
