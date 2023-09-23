@@ -51,7 +51,7 @@
       *ngIf="
         fetchedCityName !== 'Nincs válasz a városra' &&
         fetchedCityName &&
-        showEachPack
+        showEachPack && !isFetching
       "
       class="pack"
     >
@@ -63,7 +63,7 @@
       *ngIf="
         fetchedCityName !== 'Nincs válasz a városra' &&
         fetchedCityName &&
-        !showEachPack
+        !showEachPack && !isFetching
       "
       class="pack"
     >

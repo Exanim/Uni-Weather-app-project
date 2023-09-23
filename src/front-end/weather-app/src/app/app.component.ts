@@ -15,6 +15,7 @@ export class AppComponent implements OnInit {
   fetchedCityName?: string;
   showEachPack = false;
   formerCity = '';
+  isFetching = true;
 
   ngOnInit(): void {
     this.cards = this.cardData.getCardsData();
@@ -23,6 +24,9 @@ export class AppComponent implements OnInit {
     );
     this.dataStorage.onFetchError.subscribe(
       (errorMessage) => (this.fetchedCityName = errorMessage)
+    );
+    this.dataStorage.isFetching.subscribe(
+      (fetchBoolean) => (this.isFetching = fetchBoolean)
     );
   }
 
