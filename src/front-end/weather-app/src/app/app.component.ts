@@ -32,7 +32,7 @@ export class AppComponent implements OnInit {
   ) {}
 
   onLookUpCity() {
-    if (this.formerCity !== this.city) {
+    if (this.formerCity !== this.city && this.city) {
       this.dataStorage.getGeoLocationByCityName(this.city);
       this.fetchedCityName = this.city;
       this.formerCity = this.city;
