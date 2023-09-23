@@ -34,11 +34,11 @@ A webalkalmazás kártya alapú megjelenítésével a felhasználók gyorsan és
 
 | Funkció      | Feladat                        | Prioritás | Becslés (h) | Eltelt Idő (h) | Hátralévő idő (h) |
 |--------------|--------------------------------|-----------|-------------|----------------|-------------------|
-| KövSpec      |                                | 0         | 4           | 3              | 1                 |
-| FunkSpec     |                                | 0         | 4           | 3              | 1                 |
-| Rendszerterv |                                | 0         | 4           | 3              | 1                 |
-| WebApp       | Felület stílus elkészítése     | 1         | 8           | 4              | 4                 |
-|              | Felület Controller Elkészítése | 2         | 6           | 0              | 6                 | 
+| KövSpec      |                                | 0         | 4           | 4              | 0                 |
+| FunkSpec     |                                | 0         | 4           | 4              | 0                 |
+| Rendszerterv |                                | 0         | 6           | 5              | 1                 |
+| WebApp       | Felület stílus elkészítése     | 1         | 4           | 4              | 0                 |
+|              | Felület Controller Elkészítése | 2         | 6           | 6              | 0                 | 
 
 ### Mérfölkövek
 1. Projekt kezdete - ***2023. szeptember 20.***
