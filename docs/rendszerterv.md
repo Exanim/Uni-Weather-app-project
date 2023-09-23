@@ -92,11 +92,37 @@ Az eseményt a Backend API indítja.
 >
 > Célunk, hogy minden felhasználó könnyen és akadálymentesen hozzáférjen az időjárási adatokhoz.
 
-> ###  Tetszőleges város adatainak lekérdezése
+> ### Tetszőleges város adatainak lekérdezése
 >
 > *Röviden*: Az alkalmazásnak akadálymentes módszert kell adnia a felhasználónak az általa kiválasztott város időjárási adatainak megjelenítésére.
 >
 > Célunk, hogy minden felhasználó képes legyen váltogatni tetszőleges városok adatai között.
+
+>### Előrejelzés megjelenítése
+>
+> *Röviden*: Az alkalmazásunk a felhasználó által válaszott város elkövetkező öt napjának előrejelzését
+> *kártyákban* jeleníti meg, melyek egyesével fél másodperc késéssel jelennek meg a felhasználó
+> számára.
+>
+> Célunk ezzel, hogy a felhasználó előre tudjon kalkulálni a terveivel, valamint a szép lassú megjelenítés
+> célja, hogy a felhasználó ne kapjon információtúlterhelést.
+
+>### Geoadatlekérő API-jal történő kommunikáció
+>
+> *Röviden*: Az alkalmazásnak kommunikálni kell tudni az OpenWeatherMap GeoData API-jával
+>
+> Célunk ezzel, hogy tovább tudjuk szállítani a megkapott adatot az OpenWeatherMap
+> FiveDaysForecast API-jával
+
+>### Előrejelzés API-jával történő kommunikáció
+>
+> *Röviden*: Az alkalmazásnak kommunikálnia kell tudni az OpenWeatherMap Five Days Forecast API-
+> jával
+>
+> Célunk ezzel, hogy a kötelezően megadandó geodatból érkező *'lat'* és *'lon'* térképpozicionálással
+> kapcsolatos változókból az előrejelzés API-jának küldött **GET** kérés testéből a válasz testében lévő
+> válaszból kapott adattal tudjon dolgozni az alkalmazásunk, ezáltal a szükséges megjelenítés ellátható
+> lesz azokkal
 
 ### Nemfunkcionális követelmények
 
