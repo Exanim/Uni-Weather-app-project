@@ -257,7 +257,7 @@ egészének ellenőrzésére.
   - Visual Studio Code
   - Paint.NET
   - Node.JS
-  - Angular
+  - Angular 14
 
 ## Absztrakt domain modell
 
@@ -284,8 +284,15 @@ naprakész időjárási adatok lekérdezését.
 
 A tesztelések célja a rendszer és komponensei megfelelő működésének ellenőrzése, vizsgálata.
 
+Tesztként az alkalmazás reszponszivitását vagyunk hivatottak tesztelni, valamint azt, hogy az alkalmazás
+megfelelő adatokat kezel-e az adott kérésre
+
 ## Telepítési terv
 
-- Android/IOS: nincs tervben
+- Le kell tölteni a NodeJS-t: *https://nodejs.org/en*
+- Fel kell telepíteni az Angular CLI-t egy konzolparanccsal *npm install -g @angular/cli*
+- Le kell tölteni a projekt megfelelő mappáját
+ *https://github.com/Exanim/Uni-Weather-app-project/tree/main/src/front-end/weather-app*
+- Konzollal belenavigálva elindítható az alkalmazás *npm start*
 - Webes alkalmazás: Az alkalmazás megtekintéséhez szükséges **egy** az ajánlott böngészők közül:
 Google Chrome, Mozilla Firefox, Opera
