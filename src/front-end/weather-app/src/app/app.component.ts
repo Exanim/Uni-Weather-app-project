@@ -14,6 +14,7 @@ export class AppComponent implements OnInit {
   city = '';
   fetchedCityName?: string;
   showEachPack = false;
+  formerCity = '';
 
   ngOnInit(): void {
     this.cards = this.cardData.getCardsData();
@@ -31,9 +32,12 @@ export class AppComponent implements OnInit {
   ) {}
 
   onLookUpCity() {
-    this.dataStorage.getGeoLocationByCityName(this.city);
-    this.fetchedCityName = this.city;
-    this.city = '';
-    this.showEachPack = !this.showEachPack;
+    if (this.formerCity !== this.city) {
+      this.dataStorage.getGeoLocationByCityName(this.city);
+      this.fetchedCityName = this.city;
+      this.formerCity = this.city;
+      this.city = '';
+      this.showEachPack = !this.showEachPack;
+    }
   }
 }
