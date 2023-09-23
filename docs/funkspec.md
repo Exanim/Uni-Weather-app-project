@@ -74,6 +74,21 @@ Az ügyfélnek négy következő napon kívül a mai napnak is láthatónak kell
 platformfüggetlenség, nem elfogadható, ha csak egy operációs rendszeren futtatható az alkalmazás.
 
 ### Jelenlegi üzleti folyamatok leírása
+1. Reklámmentesen és bejelentkezés nélkül hozzáfér a felhasználó a kívánt információhoz
+
+2. Az ügyfél manuálisan megadja helyadatait
+
+3. Internet elérés esetén lekéri a napi előrejelzést a beállított helyszínekre, ami magába foglalja az órákra bontott hőmérsékletet, az idő természetét, pl: felhős, napos, esős
+
+4. Az alkalmazás kártyákra bontva megjeleníti a mai illetve a következő négy nap előrelátható
+időjárását, amennyiben a mai nap ideje elmúlt 15:00:01, azesetben már a holnapi nap előrelátható
+időjárást közli az alkalmazás
+
+5. A kártyák tartalmazzák az időjárás intuitív megjelenítését, a hőmérsékletet, a széljárást és a 
+páratartalmat
+
+6.  A kártyák fölött elhelyezkedik egy keresősor, mely mellett a nagyító gombra kattintva elindul a
+funkcionalitás
 
 ### Igényelt üzleti folyamatok leírása
 - Reklámmentesen és bejelentkezés nélkül hozzáfér a felhasználó a kívánt információhoz
