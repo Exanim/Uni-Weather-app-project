@@ -68,19 +68,43 @@ majd lecseréljük az API hívásból származó adattal azt - ***2023. szeptemb
 
 ### Üzleti folyamatok
 
-1. **Város Lekérdezése:** Adott város időjárási adatainak lekérdezése
+1. **Város Lekérdezése:** Adott város időjárási adatainak lekérdezése.
 Az eseményt az alkalmazás felhasználói felülete indítja.
 
    - Input: Felhasználói input
    - Output: Lekérdezni kívánt város időjárási adatai 5 napra előrejósolva
    - Szereplők: Felhasználó
 
-2. **Backend Adatfeldolgozás:** A rendszer által lekért időjárási adatok feldolgozása és továbbítása a
-frontend felé.
-Az eseményt a Backend API indítja.
+2. **Város input Geoadattá alakítása:** A felhasználó által megadott városinput továbbküldésre kerül a
+Geoadatlekérő API-hoz, amely további feldolgozás céljából visszaküldi a választ, mely tartalmazza
+a megadott város **'lat'** és **'lon'** változóit. Az eseményt a GeoData API indítja.
     - Input: Időjárási adatok
-    - Output: Feldolgozott időjárási adatok
-    - Szereplők: Backend API, Felhasználó
+    - Output: Visszaküldött város **'lat'** és **'lon'** feldolgozáshoz szükséges változói
+    - Szereplők: GeoData API, Felhasználó
+
+3. **GeoAdat továbbítása az OpenWeatherMap API részére:** A GeoData API által visszaküldött **'lat'** és
+**'lon'** változók továbbküldésre kerülnek az OpenWeatherMap FiveDaysForecast API-jának, amely
+válaszként továbbítja a front-end felé a szükséges kimenetet, mely egy négyelemű objektum.
+      - Input: **'lat'** és **'lon'** geoadatváltozók
+      - Output: Visszaküldött város 5 napos előrejelzése 3 órás bontásokban egyéb 
+      metainformációval
+      - Szereplők: GeoData API, front-end Angular app, FiveDaysForecast API
+
+4. **Megkapott válasz szűrése:** Az _'OpenWeatherMap FiveDaysForecast'_ API-jából megkapott adat
+olyan módon történő szűrése, hogy front-end által feldolgozható legyen.
+      - Input: Visszaküldött város 5 napos előrejelzése 3 órás bontásokban egyéb 
+      metainformációval
+      - Output: 5 napos előrejelzés délre leszűkítve, amennyiben az app-ban 15:00:01 után fut le a
+      felhasználó információlekérése, az azt követő napot közli, amennyiben azt megelőzően fut a
+      nap során, a jelenlegi nap is megjelenítésre kerül, viszont '6.' nap sose lesz az outputon.
+      - Szereplők: Angular front-end app
+
+5. **Megkapott válasz megjelenítése:** A front-end kártyákként megjeleníti az előző pont outputjában
+megkapott kimenetet 'nap-kártyákként', hogy a felhasználó olvasni tudja azt.
+      - Input: 4. pontban megkapott output délre lebontva az elkövetkezendő (vagy jelenlegi) nappal
+      együtt 5 napra.
+      - Output: 5 szépen lassan megjelenő kártya a felületen
+      - Szereplők: Angular front-end app, böngésző, felhasználó
 
 ## Követelmények
 
