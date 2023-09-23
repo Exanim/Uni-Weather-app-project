@@ -21,11 +21,25 @@
           ></path>
         </svg>
       </button>
-      <div style="color: black" *ngIf="fetchedCityName" class="city">
+      <div
+        style="color: black"
+        *ngIf="fetchedCityName !== 'Nincs válasz a városra'"
+        class="city"
+      >
+        {{ fetchedCityName }}
+      </div>
+      <div
+        style="color: red"
+        *ngIf="fetchedCityName === 'Nincs válasz a városra'"
+        class="city"
+      >
         {{ fetchedCityName }}
       </div>
     </div>
-    <div *ngIf="fetchedCityName" class="pack">
+    <div
+      *ngIf="fetchedCityName !== 'Nincs válasz a városra' && fetchedCityName"
+      class="pack"
+    >
       <div class="card" *ngFor="let cardElement of cards">
         <app-card [card]="cardElement"></app-card>
       </div>
