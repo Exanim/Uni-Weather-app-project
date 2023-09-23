@@ -9,7 +9,8 @@ A Weather webapplikáció célja az, hogy a felhasználók számára könnyen é
 A webalkalmazás lehetővé teszi a felhasználók számára, hogy egyszerűen megkeressék a kívánt helyszínt a kereső funkció használatával, és biztosítja az időjárási adatok megjelenítését kártyák formájában.
 Az első kártya kiemelt módon mutatja be az aktuális hőmérsékletet, míg a további kártya grafikusan ábrázolja a négy napos előrejelzést, segítve a felhasználókat a jövőbeli időjárás megértésében.
 
-A webalkalmazás fókuszában a felhasználói élmény és az egyszerűség áll, így mindenki könnyedén használhatja bármely platformon, legyen az számítógép, tablet vagy telefon.
+A webalkalmazás fókuszában a felhasználói élmény és az egyszerűség áll, így mindenki könnyedén
+használhatja bármely platformon, legyen az számítógép, tablet vagy telefon.
 Az ingyenes elérhetőség lehetővé teszi bárki számára, hogy naprakész időjárási adatokhoz jusson.
 A webalkalmazás kártya alapú megjelenítésével a felhasználók gyorsan és könnyen áttekinthetik az időjárási információkat.
 
@@ -26,10 +27,10 @@ A webalkalmazás kártya alapú megjelenítésével a felhasználók gyorsan és
 
 ### Ütemterv
 
-- Projekt kezdet: 2023. szeptember 20.
-- Frontend fejlesztés kezdete: 2023. szeptember 21.
-- Tesztelés kezdete: 2023. szeptember 24.
-- Végleges verzió kiadása: 2023. szeptember 24.
+- Projekt kezdet: ***2023. szeptember 20.***
+- Frontend fejlesztés kezdete: ***2023. szeptember 21.***
+- Tesztelés kezdete: ***2023. szeptember 24.***
+- Végleges verzió kiadása: ***2023. szeptember 24.***
 
 | Funkció      | Feladat                        | Prioritás | Becslés (h) | Eltelt Idő (h) | Hátralévő idő (h) |
 |--------------|--------------------------------|-----------|-------------|----------------|-------------------|
@@ -40,6 +41,19 @@ A webalkalmazás kártya alapú megjelenítésével a felhasználók gyorsan és
 |              | Felület Controller Elkészítése | 2         | 6           | 0              | 6                 | 
 
 ### Mérfölkövek
+1. Projekt kezdete - ***2023. szeptember 20.***
+1. Alapvető HTML template elkészítése - ***2023. szeptember 20.***
+2. HTML template-hez tartozó CSS fájl konfigurálása - ***2023. szeptember 20.***
+3. A napok kártyáinak és a teljes alkalmazás szétválasztása különböző template fájlokra - ***2023. szeptember 21.***
+4. Kártyalogika megfogalmazása - ***2023. szeptember 21.***
+5. Alkalmazáslogika megfogalmazása előre beégetett próbaadatokkal - ***2023. szeptember 21.***
+6. Geoadat lekérése külső API-ról városnév alapján - ***2023. szeptember 21.***
+7. Geoadat szűrése úgy, hogy a megfelelő output érkezzen a front-endre - ***2023. szeptember 21.***
+8. Geoadat elküldése egy különálló API-nak - ***2023. szeptember 21.***
+9. A különálló API-ból származó előrelátható 40 időjáráselőrejelzés rekordjának szűrése úgy, hogy csak
+a szükséges információt kapja meg a front-end - ***2023. szeptember 22.***
+10. A szűrt információ kiküldése a komponensek felé úgy, hogy közben a beégetett adatot kitöröljük,
+majd lecseréljük az API hívásból származó adattal azt - ***2023. szeptember 22.***
 
 ## Üzleti folyamatok modellje
 
