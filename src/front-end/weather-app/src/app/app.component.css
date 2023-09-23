@@ -13,7 +13,7 @@ body {
 
 .main {
   width: auto;
-  margin: 25px auto;
+  margin: 14vh auto 0 auto;
   max-width: 1350px;
   display: block;
   background: linear-gradient(135deg, #167aff, #a901ff);
@@ -127,6 +127,28 @@ body {
   animation-name: fade;
 }
 
+footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  padding: 10px 0;
+  text-align: center;
+}
+
+footer p {
+  color: #888;
+  font-size: 14px;
+  margin: 0;
+  padding: 5px;
+  display: inline;
+}
+
+footer p:not(:last-child)::after {
+  content: " | ";
+  margin: 0 5px;
+  color: #333;
+}
+
 @media screen and (max-width: 992px) {
   .main {
     padding: 25px;
@@ -136,9 +158,15 @@ body {
     justify-content: center;
     align-items: center;
   }
+  footer{
+    position: relative;
+  }
 }
 
 @media screen and (max-width: 1450px) {
+  .main{
+    margin: 10px auto;
+  }
   .pack{
     margin: 0 auto;
     justify-content: center;
