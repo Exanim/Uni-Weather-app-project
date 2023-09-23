@@ -213,11 +213,29 @@ Az alkalmazás a következő részekből fog állni:
 - **Frontend:** Felhasználói felület, amely a böngészőben fut és lehetővé teszi a felhasználók számára az
 időjárási adatok megtekintését és a városok keresését.
 
-- **Backend:** Az időjárási adatok lekérdezéséért és feldolgozásáért felelős rész, az OpenWeather API,
-mely biztosítja a frontend felé az adatokat.
+- **Geoadatlekérő API:** Az az *OpenWeatherMap API*, amely létező város inputjára a hozzá kapcsolódó
+outputként visszaküldi a front-end felé a **lat** és **lon** geoadatot, amely megfeleltethető a valóságban
+a szélességi és hosszúsági fokának az adott városnak.
+
+- **FiveDaysForecast API:** Az időjárási adatok lekérdezéséért és feldolgozásáért felelős
+*OpenWeatherAPI* rész, mely biztosítja a frontend felé frontend részére feldolgozandó adatot,
+amennyiben feldolgozható geoadatot kapott a kérés törzsében.
 
 ## Felhasználói felület tervezési minták
-- Az alkalmazás felhasználói felülete könnyen értelmezhető és felhasználóbarát lesz, hogy a felhasználók gyorsan megtalálják az időjárási információkat.
+- Az alkalmazás tartalmaz egy négyzetet, mely lila / kék *hideg* színeket tartalmaz a felhasználó szeme biztonsága érdekében, továbbá lekerekített széleket, hogy ne tűnjenek annyira élesnek a szélek.
+- Balra zárva tartalmaz egy keresősávot, amely szintén lekerekített sarkakat tartalmaz.
+- Ettől jobbra található egy kör alakú keresőgomb, amely a város kereséséért felelős, tartalmazza a
+megfelelő logikát, hogy kattintásra véghezmenjen a város keresése
+- Ettől jobbra található, egy eredetileg üresen lévő *'div'* elem, amely akkor válik láthatóvá,
+amennyiben a felhasználó valamilyen legalább egybetűs városra rákeres, ha létező, ha nem, hiszen
+az alkalmazás feldolgozza a hibás inputot is, amikor is pirosan jelenik meg az egyébként fehér
+szöveg.
+- Alatta van egy eleinte szintén láthatatlan *'div'*, mely tartalmazni fogja később a kártyákat, de ez a div
+is, csak annak következtében látható, amennyiben a felhasználó kezdeményezi a megfelelő város
+keresését.
+- Ezen belül látható öt darab dinamikusan megjelenő szépen animált kártya, melyek tartalmazzák a
+felhasználó által kért város napokra lebontott déli középhőmérsékletét, amennyiben a kérés
+megfelelő volt.
 
 ## Backend API
 - Az alkalmazás az OpenWeather RESTful API- ját használja, hogy a front-enden történő interakciókat
