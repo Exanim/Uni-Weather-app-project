@@ -165,6 +165,18 @@ megkapott kimenetet 'nap-kártyákként', hogy a felhasználó olvasni tudja azt
 - Adatvédelmi jogszabályok betartása.
 - GDPR követelmények teljesítése.
 
+- Az OpenWeatherMap API használatának törvényi előírásai (eredeti angol szövegről fordítva) - forrás: *https://openweathermap.org/faq , ChatGPT 3.5*
+
+> A Free és Professional előfizetési tervek esetében az attribúciós követelmény kötelező. Amikor a
+> licenced ezt megköveteli, akkor a következő információt kell elhelyezni a megoldás látható részén:
+> - ‘Weather data provided by OpenWeather’
+> - Hiperhivatkozás a weboldalunkra: *https://openweathermap.org/*
+> - OpenWeather logó. Különböző stílusok könyvtárát biztosítjuk, hogy illeszkedjen az alkalmazás 
+> tervezéséhez. Letöltheti őket a megadott linken.
+> *https://openweathermap.org/storage/app/media/logo_files.zip*
+> - Ha kérdése van a konkrét helyzettel kapcsolatban, kérjük, lépjen kapcsolatba támogató
+> csapatunkkal, és örömmel tanácsot adunk.  *info@weatherapp.com*
+
 ## Funkcionális terv
 
 ### Rendszerszereplők
