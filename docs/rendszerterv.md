@@ -28,7 +28,10 @@ A webalkalmazás kártya alapú megjelenítésével a felhasználók gyorsan és
 ### Ütemterv
 
 - Projekt kezdet: ***2023. szeptember 20.***
+- HTML Template és hozzátartozó CSS elkészítése ***2023. szeptember 20.***
 - Frontend fejlesztés kezdete: ***2023. szeptember 21.***
+- Geoadatlekérés implementálása: ***2023. szeptember 22.***
+- Fő backenddel történő kommunikáció megvalósítása ***2023. szeptember 23.***
 - Tesztelés kezdete: ***2023. szeptember 24.***
 - Végleges verzió kiadása: ***2023. szeptember 24.***
 
