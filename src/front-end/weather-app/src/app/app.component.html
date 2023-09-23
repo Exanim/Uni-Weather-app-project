@@ -23,11 +23,18 @@
       </button>
       <div
         style="color: white"
-        *ngIf="fetchedCityName !== 'Nincs válasz a városra'"
+        *ngIf="fetchedCityName !== 'Nincs válasz a városra' && showEachPack"
         class="city"
       >
         {{ fetchedCityName }}
       </div>
+      <div
+      style="color: white"
+      *ngIf="fetchedCityName !== 'Nincs válasz a városra' && !showEachPack"
+      class="city"
+    >
+      {{ fetchedCityName }}
+    </div>
       <div
         style="color: crimson"
         *ngIf="fetchedCityName === 'Nincs válasz a városra'"
@@ -37,13 +44,21 @@
       </div>
     </div>
     <div
-      *ngIf="fetchedCityName !== 'Nincs válasz a városra' && fetchedCityName"
+      *ngIf="fetchedCityName !== 'Nincs válasz a városra' && fetchedCityName && showEachPack"
       class="pack"
     >
       <div class="card" *ngFor="let cardElement of cards">
         <app-card [card]="cardElement"></app-card>
       </div>
     </div>
+    <div
+    *ngIf="fetchedCityName !== 'Nincs válasz a városra' && fetchedCityName && !showEachPack"
+    class="pack"
+  >
+    <div class="card" *ngFor="let cardElement of cards">
+      <app-card [card]="cardElement"></app-card>
+    </div>
+  </div>
   </div>
   <footer>
     <p>Kapcsolat: info@weatherapp.com</p>
