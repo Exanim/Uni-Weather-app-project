@@ -33,7 +33,7 @@ body {
   padding: 10px;
 }
 
-.search input {
+.search form input {
   border: 0;
   outline: 0;
   background-color: #ebfffc;
