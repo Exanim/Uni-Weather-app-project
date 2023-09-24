@@ -7,7 +7,7 @@
 
 body {
   width: 100%;
-  min-width: 400px;
+  min-width: 420px;
   background: #252525;
 }
 
@@ -16,9 +16,15 @@ header{
   justify-content: space-between;
 }
 
+form {
+  display: flex;
+  width: auto;
+  flex-direction: row;
+}
+
 .main {
   width: auto;
-  height: 580px;
+  min-height: 580px;
   margin: 14vh auto 0 auto;
   max-width: 1350px;
   display: block;
@@ -40,7 +46,7 @@ header{
   align-items: flex-start;
   flex-direction: row;
   align-items: center;
-  padding: 10px;
+  margin: 10px 10px;
   justify-content: flex-start;
   min-width: 290px;
 }
@@ -53,7 +59,6 @@ header{
   padding: 10px 25px;
   height: 40px;
   border-radius: 30px;
-  flex: 1;
   margin-right: 16px;
   font-size: 18px;
   max-width: 370px;
@@ -104,7 +109,6 @@ header{
   transition: .4s;
   border-radius: 34px;
   width: 100%;
-  order: 2;
 }
 
 .slider:before {
@@ -250,7 +254,7 @@ footer p:not(:last-child)::after {
     padding: 0;
     align-items: center;
   }
-  .search input{
+  .search form input{
     padding: 5px 15px;
     border-radius: 15px;
     flex: 1;
