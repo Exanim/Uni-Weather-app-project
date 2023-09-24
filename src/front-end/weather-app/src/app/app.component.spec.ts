@@ -103,4 +103,69 @@ describe('Component: App', () => {
 
     expect(app.onLookUpCity).toHaveBeenCalled();
   })
+
+  it('should have a body element with class main inside', () => {
+    const el = fixture.debugElement.query(By.css('body .main'))
+    expect(el).toBeTruthy();
+  })
+
+  it('should have a main element with class search inside', () => {
+    const el = fixture.debugElement.query(By.css('.main .search'))
+    expect(el).toBeTruthy();
+  })
+
+  it('should not have a main element with class search and city inside', () => {
+    const el = fixture.debugElement.query(By.css('.main .search .city'));
+    expect(el).toBeFalsy();
+  });
+
+  it('should have a search element with form inside', () => {
+    const el = fixture.debugElement.query(By.css('.search form'))
+    expect(el).toBeTruthy();
+  })
+
+  it('should have a form element with input inside', () => {
+    const el = fixture.debugElement.query(By.css('form input'))
+    expect(el).toBeTruthy();
+  })
+
+  it('should have a form element with button inside', () => {
+    const el = fixture.debugElement.query(By.css('form button'))
+    expect(el).toBeTruthy();
+  })
+
+  it('should have a form element with button inside', () => {
+    const el = fixture.debugElement.query(By.css('form button'))
+    expect(el).toBeTruthy();
+  })
+
+  it('should have a form element with button inside', () => {
+    const el = fixture.debugElement.query(By.css('form button'))
+    expect(el).toBeTruthy();
+  })
+
+  it('should not have a main element with class pack inside', () => {
+    const el = fixture.debugElement.query(By.css('.main .pack'));
+    expect(el).toBeFalsy();
+  });
+
+  it('should not have a main element with class pack inside', () => {
+    const el = fixture.debugElement.query(By.css('.main .pack'));
+    expect(el).toBeFalsy();
+  });
+
+  it('should not have a main element with class pack and card inside', () => {
+    const el = fixture.debugElement.query(By.css('.main .pack .card'));
+    expect(el).toBeFalsy();
+  });
+
+  it('should have a body element with footer inside', () => {
+    const el = fixture.debugElement.query(By.css('body footer'));
+    expect(el).toBeTruthy();
+  });
+
+  it('should have a body element with footer and img inside', () => {
+    const el = fixture.debugElement.query(By.css('body footer img'));
+    expect(el).toBeTruthy();
+  });
 });
