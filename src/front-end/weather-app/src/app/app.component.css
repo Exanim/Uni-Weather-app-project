@@ -113,7 +113,7 @@ form {
 
 .slider:before {
   position: absolute;
-  content: "C°";
+  content: "°C";
   display: flex;
   justify-content: center;
   align-items: center;
@@ -128,7 +128,7 @@ form {
 }
 
 input[type="checkbox"]:checked + .slider:before {
-  content: "F°";
+  content: "°F";
   -webkit-transform: translateX(40px);
   -ms-transform: translateX(40px);
   transform: translateX(40px);
