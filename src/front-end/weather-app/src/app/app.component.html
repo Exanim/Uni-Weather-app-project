@@ -1,9 +1,10 @@
 <body>
   <div class="main">
     <div class="search">
-      <form (ngSubmit)="onLookUpCity()">
+      <form #cityForm="ngForm" id="form" name="form" (ngSubmit)="onLookUpCity()">
         <input
           [(ngModel)]="city"
+          id="city"
           type="city"
           name="city"
           placeholder="írj be egy várost"
