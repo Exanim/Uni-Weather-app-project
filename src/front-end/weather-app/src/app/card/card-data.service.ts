@@ -7,7 +7,7 @@ import { Weather } from '../shared/weather.model';
 })
 export class CardDataService {
   onWeatherChanged = new EventEmitter<Card[]>();
-
+  isFahrenheit: boolean = false;
   cards: Card[] = [
     new Card(
       'Mon',
@@ -122,6 +122,24 @@ export class CardDataService {
       this.cards[i].temperature = weather[i].temp - 273.15;
       this.cards[i].windSpeed = weather[i].windSpeed;
     }
+    if(this.isFahrenheit){
+      this.UpdateTemperature()
+    }
     this.onWeatherChanged.next(this.cards);
+  }
+
+  UpdateTemperature(){
+    this.cards.forEach(card => {
+      if (this.isFahrenheit){
+        card.temperature = (card.temperature * 9/5) + 32;
+      }else{
+        card.temperature = (card.temperature - 32) * 5/9;
+      }
+    })
+    this.onWeatherChanged.next(this.cards);
+  }
+
+  setIsFahrenheit(isFahrenheit: boolean){
+    this.isFahrenheit = isFahrenheit;
   }
 }

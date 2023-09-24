@@ -16,6 +16,7 @@ export class AppComponent implements OnInit {
   showEachPack = false;
   formerCity = '';
   isFetching = true;
+  isFahrenheit: boolean = false;
 
   ngOnInit(): void {
     this.cards = this.cardData.getCardsData();
@@ -43,5 +44,10 @@ export class AppComponent implements OnInit {
       this.city = '';
       this.showEachPack = !this.showEachPack;
     }
+  }
+
+  onCheckboxChange(){
+    this.cardData.setIsFahrenheit(this.isFahrenheit)
+    this.cardData.UpdateTemperature();
   }
 }
