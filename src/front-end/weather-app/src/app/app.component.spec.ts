@@ -134,21 +134,6 @@ describe('Component: App', () => {
     expect(el).toBeTruthy();
   })
 
-  it('should have a form element with button inside', () => {
-    const el = fixture.debugElement.query(By.css('form button'))
-    expect(el).toBeTruthy();
-  })
-
-  it('should have a form element with button inside', () => {
-    const el = fixture.debugElement.query(By.css('form button'))
-    expect(el).toBeTruthy();
-  })
-
-  it('should not have a main element with class pack inside', () => {
-    const el = fixture.debugElement.query(By.css('.main .pack'));
-    expect(el).toBeFalsy();
-  });
-
   it('should not have a main element with class pack inside', () => {
     const el = fixture.debugElement.query(By.css('.main .pack'));
     expect(el).toBeFalsy();
