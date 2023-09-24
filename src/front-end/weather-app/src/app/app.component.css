@@ -7,8 +7,13 @@
 
 body {
   width: 100%;
-  min-width: 320px;
+  min-width: 400px;
   background: #252525;
+}
+
+header{
+  display: flex;
+  justify-content: space-between;
 }
 
 .main {
@@ -31,6 +36,8 @@ body {
   flex-direction: row;
   align-items: center;
   padding: 10px;
+  justify-content: flex-start;
+  min-width: 290px;
 }
 
 .search input {
@@ -49,8 +56,6 @@ body {
 }
 
 .search button {
-  border: 0;
-  outline: 0;
   background: #ebfffc;
   border-radius: 50%;
   width: 60px;
@@ -58,6 +63,66 @@ body {
   cursor: pointer;
   min-width: 60px;
   min-height: 60px;
+}
+
+.switch {
+  display: inline-block;
+  position: relative;
+  width: 100px;
+  height: 60px;
+}
+
+.container{
+  display: flex;
+  flex-direction: row;
+  height: inherit;
+  padding: 0 20px;
+  font-size: 25px;
+  font-weight: bold;
+  margin: 10px 0;
+  flex-wrap: wrap;
+}
+
+.switch input[type="checkbox"] {
+  display: none;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ebfffc;
+  -webkit-transition: .4s;
+  transition: .4s;
+  border-radius: 34px;
+  width: 100%;
+  order: 2;
+}
+
+.slider:before {
+  position: absolute;
+  content: "C°";
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 46px;
+  width: 46px;
+  left: 7px;
+  bottom: 7px;
+  background: linear-gradient(135deg, #167aff, #a901ff);
+  -webkit-transition: .4s;
+  transition: .4s;
+  border-radius: 50%;
+}
+
+input[type="checkbox"]:checked + .slider:before {
+  content: "F°";
+  -webkit-transform: translateX(40px);
+  -ms-transform: translateX(40px);
+  transform: translateX(40px);
 }
 
 .card {
@@ -190,6 +255,34 @@ footer p:not(:last-child)::after {
     height: 50px;
     min-width: 50px;
     min-height: 50px;
+  }
+
+  .switch {
+    width: 80px;
+    height: 50px;
+  }
+  
+  .container{
+    font-size: 22px;
+    padding: 0 10px 0 0;
+  }
+  
+  .slider {
+    border-radius: 15px;
+  }
+  
+  .slider:before {
+    height: 40px;
+    width: 40px;
+    left: 5px;
+    bottom: 5px;
+    border-radius: 10px;
+  }
+  
+  input[type="checkbox"]:checked + .slider:before {
+    -webkit-transform: translateX(30px);
+    -ms-transform: translateX(30px);
+    transform: translateX(30px);
   }
 }
 
