@@ -15,4 +15,10 @@ describe('Component: App', () => {
     let app = fixture.debugElement.componentInstance;
     expect(app).toBeTruthy();
   })
+
+  it('should have the correct title', ()=>{
+    let fixture = TestBed.createComponent(AppComponent);
+    let app = fixture.debugElement.componentInstance;
+    expect(app.title).toBe('Weather Webapp');
+  })
 });
