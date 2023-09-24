@@ -72,9 +72,35 @@ describe('Component: App', () => {
 
     spyOn(app, 'onLookUpCity');
     form.dispatchEvent(new Event('submit'));
-    fixture.detectChanges();
-    fixture.whenStable();
 
     expect(app.onLookUpCity).toHaveBeenCalled();
   });
+
+  it('form should not be submittable via click if input empty', ()=>{
+    fixture.detectChanges();
+
+    const cityInput: HTMLInputElement = fixture.debugElement.nativeElement.querySelector('#city');
+    const button: HTMLButtonElement = fixture.nativeElement.querySelector('#submit');
+
+    cityInput.value='';
+    fixture.detectChanges();
+    button.click();
+    spyOn(app, 'onLookUpCity');
+
+    expect(app.onLookUpCity).not.toHaveBeenCalled();
+  })
+
+  it('form should be submittable via click if input valid', ()=>{
+    fixture.detectChanges();
+
+    const cityInput: HTMLInputElement = fixture.debugElement.nativeElement.querySelector('#city');
+    const button: HTMLButtonElement = fixture.nativeElement.querySelector('#submit');
+
+    cityInput.value='Budapest';
+    fixture.detectChanges();
+    spyOn(app, 'onLookUpCity');
+    button.click();
+
+    expect(app.onLookUpCity).toHaveBeenCalled();
+  })
 });
