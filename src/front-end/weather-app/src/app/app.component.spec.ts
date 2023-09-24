@@ -59,23 +59,19 @@ describe('Component: App', () => {
       expect(app.onLookUpCity).not.toHaveBeenCalled();
     });
   });
-  
 
-  // it('should call onLookUpCity when the form is submitted', async () => {
-  //   let fixture = TestBed.createComponent(AppComponent);
-  //   let app = fixture.debugElement.componentInstance;
-  //   spyOn(app, 'onLookUpCity');
+  it('form should submit if input contains city', () => {
+    fixture.detectChanges();
   
-  //   app.city = 'Budapest'; // Állítsa be a city értékét először
-    
-  //   const form = fixture.nativeElement.querySelector('form');
-  //   form.dispatchEvent(new Event('submit'));
-    
-  //   await fixture.whenStable(); // Várjon az aszinkron művelet végére
-    
-    
-  //   fixture.detectChanges();
-  //   expect(app.formerCity).toBe('Budapest');
-  //   // Itt ellenőrizheti az egyéb elvárt eredményeket vagy viselkedést
-  // });
+    const cityInput: HTMLInputElement = fixture.debugElement.nativeElement.querySelector('#city');
+    const form = fixture.nativeElement.querySelector('form');
+    cityInput.value = 'Budapest';
+  
+    spyOn(app, 'onLookUpCity');
+    form.dispatchEvent(new Event('submit'));
+  
+    fixture.whenStable().then(() => {
+      expect(app.onLookUpCity).toHaveBeenCalled();
+    });
+  });
 });
