@@ -7,12 +7,14 @@ import { Weather } from '../shared/weather.model';
 })
 export class CardDataService {
   onWeatherChanged = new EventEmitter<Card[]>();
+
   isFahrenheit: boolean = false;
   cards: Card[] = [
     new Card(
       'Mon',
       'https://img.icons8.com/?size=128&id=5wSfjHD2HPMD&format=png',
       25,
+      false,
       50,
       10
     ),
@@ -20,6 +22,7 @@ export class CardDataService {
       'Tue',
       'https://img.icons8.com/?size=128&id=5wSfjHD2HPMD&format=png',
       32,
+      false,
       20,
       10
     ),
@@ -27,6 +30,7 @@ export class CardDataService {
       'Tue',
       'https://img.icons8.com/?size=128&id=5wSfjHD2HPMD&format=png',
       32,
+      false,
       20,
       10
     ),
@@ -34,6 +38,7 @@ export class CardDataService {
       'Tue',
       'https://img.icons8.com/?size=128&id=5wSfjHD2HPMD&format=png',
       32,
+      false,
       20,
       10
     ),
@@ -41,6 +46,7 @@ export class CardDataService {
       '',
       '',
       32,
+      false,
       20,
       10
     ),
@@ -120,6 +126,7 @@ export class CardDataService {
       this.cards[i].day = dayOfWeek;
       this.cards[i].humidity = weather[i].humidity;
       this.cards[i].temperature = weather[i].temp - 273.15;
+      this.cards[i].temperatureType = this.isFahrenheit;
       this.cards[i].windSpeed = weather[i].windSpeed;
     }
     if(this.isFahrenheit){
@@ -132,8 +139,10 @@ export class CardDataService {
     this.cards.forEach(card => {
       if (this.isFahrenheit){
         card.temperature = (card.temperature * 9/5) + 32;
+        card.temperatureType = this.isFahrenheit;
       }else{
         card.temperature = (card.temperature - 32) * 5/9;
+        card.temperatureType = this.isFahrenheit;
       }
     })
     this.onWeatherChanged.next(this.cards);

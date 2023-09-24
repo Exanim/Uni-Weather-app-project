@@ -7,7 +7,7 @@ import { Card } from './card.model';
   styleUrls: ['../app.component.css'],
 })
 export class CardComponent implements OnInit {
-  @Input() card: Card = new Card('', '', 0, 0, 0);
+  @Input() card: Card = new Card('', '', 0, false, 0, 0);
 
   constructor() {}
 
