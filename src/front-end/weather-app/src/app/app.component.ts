@@ -13,6 +13,9 @@ export class AppComponent implements OnInit {
   cards: Card[] = [];
   city = '';
   fetchedCityName?: string;
+  showEachPack = false;
+  formerCity = '';
+  isFetching = true;
 
   ngOnInit(): void {
     this.cards = this.cardData.getCardsData();
@@ -22,6 +25,9 @@ export class AppComponent implements OnInit {
     this.dataStorage.onFetchError.subscribe(
       (errorMessage) => (this.fetchedCityName = errorMessage)
     );
+    this.dataStorage.isFetching.subscribe(
+      (fetchBoolean) => (this.isFetching = fetchBoolean)
+    );
   }
 
   constructor(
@@ -30,8 +36,12 @@ export class AppComponent implements OnInit {
   ) {}
 
   onLookUpCity() {
-    this.dataStorage.getGeoLocationByCityName(this.city);
-    this.fetchedCityName = this.city;
-    this.city = '';
+    if (this.formerCity !== this.city && this.city) {
+      this.dataStorage.getGeoLocationByCityName(this.city);
+      this.fetchedCityName = this.city;
+      this.formerCity = this.city;
+      this.city = '';
+      this.showEachPack = !this.showEachPack;
+    }
   }
 }

@@ -19,7 +19,7 @@ A webalkalmazás kártya alapú megjelenítésével a felhasználók gyorsan és
 ### Projekt szerepkörök
 
 | Név           | Szerepkör  | Feladat           |
-|---------------|------------|-------------------|
+| ------------- | ---------- | ----------------- |
 | Gyenes Balázs | Programozó | Frontend Controll |
 | Baráth Simon  | Programozó | N/A               |
 | Brázda Martin | Programozó | Frontend Style    |
@@ -27,36 +27,37 @@ A webalkalmazás kártya alapú megjelenítésével a felhasználók gyorsan és
 
 ### Ütemterv
 
-- Projekt kezdet: ***2023. szeptember 20.***
-- HTML Template és hozzátartozó CSS elkészítése ***2023. szeptember 20.***
-- Frontend fejlesztés kezdete: ***2023. szeptember 21.***
-- Geoadatlekérés implementálása: ***2023. szeptember 22.***
-- Fő backenddel történő kommunikáció megvalósítása ***2023. szeptember 23.***
-- Tesztelés kezdete: ***2023. szeptember 24.***
-- Végleges verzió kiadása: ***2023. szeptember 24.***
+- Projekt kezdet: **_2023. szeptember 20._**
+- HTML Template és hozzátartozó CSS elkészítése **_2023. szeptember 20._**
+- Frontend fejlesztés kezdete: **_2023. szeptember 21._**
+- Geoadatlekérés implementálása: **_2023. szeptember 22._**
+- Fő backenddel történő kommunikáció megvalósítása **_2023. szeptember 23._**
+- Tesztelés kezdete: **_2023. szeptember 24._**
+- Végleges verzió kiadása: **_2023. szeptember 24._**
 
 | Funkció      | Feladat                        | Prioritás | Becslés (h) | Eltelt Idő (h) | Hátralévő idő (h) |
-|--------------|--------------------------------|-----------|-------------|----------------|-------------------|
+| ------------ | ------------------------------ | --------- | ----------- | -------------- | ----------------- |
 | KövSpec      |                                | 0         | 4           | 4              | 0                 |
 | FunkSpec     |                                | 0         | 4           | 4              | 0                 |
 | Rendszerterv |                                | 0         | 6           | 5              | 1                 |
 | WebApp       | Felület stílus elkészítése     | 1         | 4           | 4              | 0                 |
-|              | Felület Controller Elkészítése | 2         | 6           | 6              | 0                 | 
+|              | Felület Controller Elkészítése | 2         | 6           | 6              | 0                 |
 
 ### Mérfölkövek
-1. Projekt kezdete - ***2023. szeptember 20.***
-1. Alapvető HTML template elkészítése - ***2023. szeptember 20.***
-2. HTML template-hez tartozó CSS fájl konfigurálása - ***2023. szeptember 20.***
-3. A napok kártyáinak és a teljes alkalmazás szétválasztása különböző template fájlokra - ***2023. szeptember 21.***
-4. Kártyalogika megfogalmazása - ***2023. szeptember 21.***
-5. Alkalmazáslogika megfogalmazása előre beégetett próbaadatokkal - ***2023. szeptember 21.***
-6. Geoadat lekérése külső API-ról városnév alapján - ***2023. szeptember 21.***
-7. Geoadat szűrése úgy, hogy a megfelelő output érkezzen a front-endre - ***2023. szeptember 21.***
-8. Geoadat elküldése egy különálló API-nak - ***2023. szeptember 21.***
-9. A különálló API-ból származó előrelátható 40 időjáráselőrejelzés rekordjának szűrése úgy, hogy csak
-a szükséges információt kapja meg a front-end - ***2023. szeptember 22.***
-10. A szűrt információ kiküldése a komponensek felé úgy, hogy közben a beégetett adatot kitöröljük,
-majd lecseréljük az API hívásból származó adattal azt - ***2023. szeptember 22.***
+
+1. Projekt kezdete - **_2023. szeptember 20._**
+1. Alapvető HTML template elkészítése - **_2023. szeptember 20._**
+1. HTML template-hez tartozó CSS fájl konfigurálása - **_2023. szeptember 20._**
+1. A napok kártyáinak és a teljes alkalmazás szétválasztása különböző template fájlokra - **_2023. szeptember 21._**
+1. Kártyalogika megfogalmazása - **_2023. szeptember 21._**
+1. Alkalmazáslogika megfogalmazása előre beégetett próbaadatokkal - **_2023. szeptember 21._**
+1. Geoadat lekérése külső API-ról városnév alapján - **_2023. szeptember 21._**
+1. Geoadat szűrése úgy, hogy a megfelelő output érkezzen a front-endre - **_2023. szeptember 21._**
+1. Geoadat elküldése egy különálló API-nak - **_2023. szeptember 21._**
+1. A különálló API-ból származó előrelátható 40 időjáráselőrejelzés rekordjának szűrése úgy, hogy csak
+   a szükséges információt kapja meg a front-end - **_2023. szeptember 22._**
+1. A szűrt információ kiküldése a komponensek felé úgy, hogy közben a beégetett adatot kitöröljük,
+   majd lecseréljük az API hívásból származó adattal azt - **_2023. szeptember 22._**
 
 ## Üzleti folyamatok modellje
 
@@ -64,7 +65,7 @@ majd lecseréljük az API hívásból származó adattal azt - ***2023. szeptemb
 
 1. Felhasználó: Az alacsony jogosultágokkal rendelkező felhasználó, aki használja az alkalmazást az időjárás lekérdezéséhez.
 2. Adminisztrátor: Adminisztrátorok magasabb jogosultsági szintel rendelkező felhasználók az alábbi feladatok ellátása végett:
-   
+
    - Problémák kezelése: Jelenlegi problémák, panaszok, visszajelzések kezelése.
    - Renszerkarbantartás: Biztonsági mentések rendeltetés szerű készítése, a rendszer teljesítményének optimalizálása.
    - Kommunikáció: Rendszeres kommunikálás a felhasználókkal: válasz felhasználók kéréseire, kérdéseire.
@@ -72,42 +73,30 @@ majd lecseréljük az API hívásból származó adattal azt - ***2023. szeptemb
 ### Üzleti folyamatok
 
 1. **Város Lekérdezése:** Adott város időjárási adatainak lekérdezése.
-Az eseményt az alkalmazás felhasználói felülete indítja.
+   Az eseményt az alkalmazás felhasználói felülete indítja.
 
    - Input: Felhasználói input
    - Output: Lekérdezni kívánt város időjárási adatai 5 napra előrejósolva
    - Szereplők: Felhasználó
 
 2. **Város input Geoadattá alakítása:** A felhasználó által megadott városinput továbbküldésre kerül a
-Geoadatlekérő API-hoz, amely további feldolgozás céljából visszaküldi a választ, mely tartalmazza
-a megadott város **'lat'** és **'lon'** változóit. Az eseményt a GeoData API indítja.
-    - Input: Időjárási adatok
-    - Output: Visszaküldött város **'lat'** és **'lon'** feldolgozáshoz szükséges változói
-    - Szereplők: GeoData API, Felhasználó
+   Geoadatlekérő API-hoz, amely további feldolgozás céljából visszaküldi a választ, mely tartalmazza
+   a megadott város **'lat'** és **'lon'** változóit. Az eseményt a GeoData API indítja. - Input: Időjárási adatok - Output: Visszaküldött város **'lat'** és **'lon'** feldolgozáshoz szükséges változói - Szereplők: GeoData API, Felhasználó
 
 3. **GeoAdat továbbítása az OpenWeatherMap API részére:** A GeoData API által visszaküldött **'lat'** és
-**'lon'** változók továbbküldésre kerülnek az OpenWeatherMap FiveDaysForecast API-jának, amely
-válaszként továbbítja a front-end felé a szükséges kimenetet, mely egy négyelemű objektum.
-      - Input: **'lat'** és **'lon'** geoadatváltozók
-      - Output: Visszaküldött város 5 napos előrejelzése 3 órás bontásokban egyéb 
-      metainformációval
-      - Szereplők: GeoData API, front-end Angular app, FiveDaysForecast API
+   **'lon'** változók továbbküldésre kerülnek az OpenWeatherMap FiveDaysForecast API-jának, amely
+   válaszként továbbítja a front-end felé a szükséges kimenetet, mely egy négyelemű objektum. - Input: **'lat'** és **'lon'** geoadatváltozók - Output: Visszaküldött város 5 napos előrejelzése 3 órás bontásokban egyéb
+   metainformációval - Szereplők: GeoData API, front-end Angular app, FiveDaysForecast API
 
 4. **Megkapott válasz szűrése:** Az _'OpenWeatherMap FiveDaysForecast'_ API-jából megkapott adat
-olyan módon történő szűrése, hogy front-end által feldolgozható legyen.
-      - Input: Visszaküldött város 5 napos előrejelzése 3 órás bontásokban egyéb 
-      metainformációval
-      - Output: 5 napos előrejelzés délre leszűkítve, amennyiben az app-ban 15:00:01 után fut le a
-      felhasználó információlekérése, az azt követő napot közli, amennyiben azt megelőzően fut a
-      nap során, a jelenlegi nap is megjelenítésre kerül, viszont '6.' nap sose lesz az outputon.
-      - Szereplők: Angular front-end app
+   olyan módon történő szűrése, hogy front-end által feldolgozható legyen. - Input: Visszaküldött város 5 napos előrejelzése 3 órás bontásokban egyéb
+   metainformációval - Output: 5 napos előrejelzés délre leszűkítve, amennyiben az app-ban 15:00:01 után fut le a
+   felhasználó információlekérése, az azt követő napot közli, amennyiben azt megelőzően fut a
+   nap során, a jelenlegi nap is megjelenítésre kerül, viszont '6.' nap sose lesz az outputon. - Szereplők: Angular front-end app
 
 5. **Megkapott válasz megjelenítése:** A front-end kártyákként megjeleníti az előző pont outputjában
-megkapott kimenetet 'nap-kártyákként', hogy a felhasználó olvasni tudja azt.
-      - Input: 4. pontban megkapott output délre lebontva az elkövetkezendő (vagy jelenlegi) nappal
-      együtt 5 napra.
-      - Output: 5 szépen lassan megjelenő kártya a felületen
-      - Szereplők: Angular front-end app, böngésző, felhasználó
+   megkapott kimenetet 'nap-kártyákként', hogy a felhasználó olvasni tudja azt. - Input: 4. pontban megkapott output délre lebontva az elkövetkezendő (vagy jelenlegi) nappal
+   együtt 5 napra. - Output: 5 szépen lassan megjelenő kártya a felületen - Szereplők: Angular front-end app, böngésző, felhasználó
 
 ## Követelmények
 
@@ -115,38 +104,38 @@ megkapott kimenetet 'nap-kártyákként', hogy a felhasználó olvasni tudja azt
 
 > ### Megtekinteni kivánt város adatainak megjelenítése
 >
-> *Röviden*: Az alkalmazásnak könnyen értelmezhető módon kell megjelenítenie az adatokat.
+> _Röviden_: Az alkalmazásnak könnyen értelmezhető módon kell megjelenítenie az adatokat.
 >
 > Célunk, hogy minden felhasználó könnyen és akadálymentesen hozzáférjen az időjárási adatokhoz.
 
 > ### Tetszőleges város adatainak lekérdezése
 >
-> *Röviden*: Az alkalmazásnak akadálymentes módszert kell adnia a felhasználónak az általa kiválasztott város időjárási adatainak megjelenítésére.
+> _Röviden_: Az alkalmazásnak akadálymentes módszert kell adnia a felhasználónak az általa kiválasztott város időjárási adatainak megjelenítésére.
 >
 > Célunk, hogy minden felhasználó képes legyen váltogatni tetszőleges városok adatai között.
 
->### Előrejelzés megjelenítése
+> ### Előrejelzés megjelenítése
 >
-> *Röviden*: Az alkalmazásunk a felhasználó által válaszott város elkövetkező öt napjának előrejelzését
-> *kártyákban* jeleníti meg, melyek egyesével fél másodperc késéssel jelennek meg a felhasználó
+> _Röviden_: Az alkalmazásunk a felhasználó által válaszott város elkövetkező öt napjának előrejelzését
+> _kártyákban_ jeleníti meg, melyek egyesével fél másodperc késéssel jelennek meg a felhasználó
 > számára.
 >
 > Célunk ezzel, hogy a felhasználó előre tudjon kalkulálni a terveivel, valamint a szép lassú megjelenítés
 > célja, hogy a felhasználó ne kapjon információtúlterhelést.
 
->### Geoadatlekérő API-jal történő kommunikáció
+> ### Geoadatlekérő API-jal történő kommunikáció
 >
-> *Röviden*: Az alkalmazásnak kommunikálni kell tudni az OpenWeatherMap GeoData API-jával
+> _Röviden_: Az alkalmazásnak kommunikálni kell tudni az OpenWeatherMap GeoData API-jával
 >
 > Célunk ezzel, hogy tovább tudjuk szállítani a megkapott adatot az OpenWeatherMap
 > FiveDaysForecast API-jával
 
->### Előrejelzés API-jával történő kommunikáció
+> ### Előrejelzés API-jával történő kommunikáció
 >
-> *Röviden*: Az alkalmazásnak kommunikálnia kell tudni az OpenWeatherMap Five Days Forecast API-
+> _Röviden_: Az alkalmazásnak kommunikálnia kell tudni az OpenWeatherMap Five Days Forecast API-
 > jával
 >
-> Célunk ezzel, hogy a kötelezően megadandó geodatból érkező *'lat'* és *'lon'* térképpozicionálással
+> Célunk ezzel, hogy a kötelezően megadandó geodatból érkező _'lat'_ és _'lon'_ térképpozicionálással
 > kapcsolatos változókból az előrejelzés API-jának küldött **GET** kérés testéből a válasz testében lévő
 > válaszból kapott adattal tudjon dolgozni az alkalmazásunk, ezáltal a szükséges megjelenítés ellátható
 > lesz azokkal
@@ -154,16 +143,33 @@ megkapott kimenetet 'nap-kártyákként', hogy a felhasználó olvasni tudja azt
 ### Nemfunkcionális követelmények
 
 > ### A webalkalmazás gyors és reszponzív működése.
->*Röviden*: Célunk, hogy az alkalmazásunk működése során semmilyen sebességi
+>
+> _Röviden_: Célunk, hogy az alkalmazásunk működése során semmilyen sebességi
 > valamint eszközkülönbségi tényező ne folyásolja be a felhasználói élményt.
 >
 > ### Kompatibilitás különböző böngészőkkel.
-> *Röviden*: Célunk, hogy a felhasználó az általa preferált böngészőben tőlünk függetlenül is futtatni tudja
+>
+> _Röviden_: Célunk, hogy a felhasználó az általa preferált böngészőben tőlünk függetlenül is futtatni tudja
 > az alkalmazásunkat.
 
 ### Törvényi előírások, szabványok
+
 - Adatvédelmi jogszabályok betartása.
 - GDPR követelmények teljesítése.
+
+- Az OpenWeatherMap API használatának törvényi előírásai (eredeti angol szövegről fordítva) - forrás: *https://openweathermap.org/faq ,
+  ChatGPT 3.5*
+
+> A Free és Professional előfizetési tervek esetében az attribúciós követelmény kötelező. Amikor a
+> licenced ezt megköveteli, akkor a következő információt kell elhelyezni a megoldás látható részén:
+>
+> - ‘Weather data provided by OpenWeather’
+> - Hiperhivatkozás a weboldalunkra: *https://openweathermap.org/*
+> - OpenWeather logó. Különböző stílusok könyvtárát biztosítjuk, hogy illeszkedjen az alkalmazás
+>   tervezéséhez. Letöltheti őket a megadott linken.
+>   *https://openweathermap.org/storage/app/media/logo_files.zip*
+> - Ha kérdése van a konkrét helyzettel kapcsolatban, kérjük, lépjen kapcsolatba támogató
+>   csapatunkkal, és örömmel tanácsot adunk. *info@weatherapp.com*
 
 ## Funkcionális terv
 
@@ -175,24 +181,27 @@ megkapott kimenetet 'nap-kártyákként', hogy a felhasználó olvasni tudja azt
 
 #### Város keresése
 
-   - A felhasználó megadja a keresett város nevét.
+- A felhasználó megadja a keresett város nevét.
 
-   - A rendszer lekéri a város időjárási adatait.
+- A rendszer lekéri a város időjárási adatait.
 
-   - Az adatok megjelenítése a felhasználónak.
+- Az adatok megjelenítése a felhasználónak.
 
 ### Határ osztályok
+
 - Felhasználói felület: A webes alkalmazás felhasználói felülete.
 
 - Backend API: Az időjárási adatok lekérdezéséért és feldolgozásáért felelős komponens.
 
 ### Menühierarchia
+
 ```mermaid
 flowchart TD
   Menu --> dataCard[Data Card]
   Menu --> search([Search])
   search --> searchMenu[Search Menu]
 ```
+
 ```mermaid
 flowchart TD
     func([Funkció])
@@ -200,34 +209,82 @@ flowchart TD
 ```
 
 ### Képernyőterv:
+
 - Keresési sáv
 - Keresőgomb nagyító megjelenítéssel
 - Város keresési eredmények
 - Időjárás részletek
-![](../kepernyotervek/sc-plan-v2.png)
+  ![](../kepernyotervek/sc-plan-v2.png)
 
 ## Rendszerarchitechtúra
 
 Az alkalmazás a következő részekből fog állni:
 
 - **Frontend:** Felhasználói felület, amely a böngészőben fut és lehetővé teszi a felhasználók számára az
-időjárási adatok megtekintését és a városok keresését.
+  időjárási adatok megtekintését és a városok keresését.
 
-- **Backend:** Az időjárási adatok lekérdezéséért és feldolgozásáért felelős rész, az OpenWeather API,
-mely biztosítja a frontend felé az adatokat.
+- **Geoadatlekérő API:** Az az _OpenWeatherMap API_, amely létező város inputjára a hozzá kapcsolódó
+  outputként visszaküldi a front-end felé a **lat** és **lon** geoadatot, amely megfeleltethető a valóságban
+  a szélességi és hosszúsági fokának az adott városnak.
+
+- **FiveDaysForecast API:** Az időjárási adatok lekérdezéséért és feldolgozásáért felelős
+  _OpenWeatherAPI_ rész, mely biztosítja a frontend felé frontend részére feldolgozandó adatot,
+  amennyiben feldolgozható geoadatot kapott a kérés törzsében.
 
 ## Felhasználói felület tervezési minták
-- Az alkalmazás felhasználói felülete könnyen értelmezhető és felhasználóbarát lesz, hogy a felhasználók gyorsan megtalálják az időjárási információkat.
+
+- Az alkalmazás tartalmaz egy négyzetet, mely lila / kék _hideg_ színeket tartalmaz a felhasználó szeme biztonsága érdekében, továbbá lekerekített széleket, hogy ne tűnjenek annyira élesnek a szélek.
+- Balra zárva tartalmaz egy keresősávot, amely szintén lekerekített sarkakat tartalmaz.
+- Ettől jobbra található egy kör alakú keresőgomb, amely a város kereséséért felelős, tartalmazza a
+  megfelelő logikát, hogy kattintásra véghezmenjen a város keresése
+- Ettől jobbra található, egy eredetileg üresen lévő _'div'_ elem, amely akkor válik láthatóvá,
+  amennyiben a felhasználó valamilyen legalább egybetűs városra rákeres, ha létező, ha nem, hiszen
+  az alkalmazás feldolgozza a hibás inputot is, amikor is pirosan jelenik meg az egyébként fehér
+  szöveg.
+- Alatta van egy eleinte szintén láthatatlan _'div'_, mely tartalmazni fogja később a kártyákat, de ez a div
+  is, csak annak következtében látható, amennyiben a felhasználó kezdeményezi a megfelelő város
+  keresését.
+- Ezen belül látható öt darab dinamikusan megjelenő szépen animált kártya, melyek tartalmazzák a
+  felhasználó által kért város napokra lebontott déli középhőmérsékletét, amennyiben a kérés
+  megfelelő volt.
 
 ## Backend API
+
 - Az alkalmazás az OpenWeather RESTful API- ját használja, hogy a front-enden történő interakciókat
-és megjelenítések fel legyenek dolgozva.
+  és megjelenítések fel legyenek dolgozva.
 - Ez az API képes visszaküldeni az aktuális időjárselőrejelzési adatokat megfelelő HTTP kérésekre.
 
 ## Tesztterv
+
 A tesztelések célja a rendszer és komponensei megfelelő működésének ellenőrzése, vizsgálata. A tesztelések
 magukban foglalják a frontend és backend egységteszteket, valamint az integrációs teszteket a rendszer
 egészének ellenőrzésére.
+
+1. Tesztelendő funkciók:
+      - Az inputként beadott város valóban a mellette megjelenő várost jeleníti-e meg
+      - A keresőgomb valóban véghezviszi-e a tőle elvárt funkcionalitást
+      - A kártyák adata valóban a **GET** kérésből származó adatot tartalmazza-e
+      - Ténylegesen változik-e az újra lekért adat az előzőtől
+
+2. Tesztek futtatása:
+      - Minden tesztesetet végre kell hajtani a fejlesztés után és az alkalmazás kiadása előtt.
+      - A tesztek függetlenek kell legyenek egymástól, és egymás után is futtathatók, hogy külön-
+      külön és együtt is tesztelhessük a rendszert.
+
+3. Teszteredmények Rögzítése:
+    - A tesztek futtatása során rögzíteni kell az eredményeket, beleértve a sikeres és sikertelen
+    teszteseteket is.
+    - A hibákat és problémákat dokumentálni kell, hogy a fejlesztők kijavíthassák azokat.
+
+4. Hibajavítás és Újraellenőrzés
+
+    - A tesztek eredményeinek alapján a talált hibákat javítani kell, majd újraellenőrizni a rendszert
+    a javítások után.
+
+5. Elfogadási Teszt
+
+    - Az elfogadási teszt során az alkalmazást a végfelhasználók (tanárok és diákok) is tesztelik, és
+    visszajelzéseik alapján lehetőség szerint további javításokat végeznek.
 
 ## Fizikai környezet
 
@@ -239,7 +296,7 @@ egészének ellenőrzésére.
   - Visual Studio Code
   - Paint.NET
   - Node.JS
-  - Angular
+  - Angular 14
 
 ## Absztrakt domain modell
 
@@ -266,8 +323,15 @@ naprakész időjárási adatok lekérdezését.
 
 A tesztelések célja a rendszer és komponensei megfelelő működésének ellenőrzése, vizsgálata.
 
+Tesztként az alkalmazás reszponszivitását vagyunk hivatottak tesztelni, valamint azt, hogy az alkalmazás
+megfelelő adatokat kezel-e az adott kérésre
+
 ## Telepítési terv
 
-- Android/IOS: nincs tervben
+- Le kell tölteni a NodeJS-t: *https://nodejs.org/en*
+- Fel kell telepíteni az Angular CLI-t egy konzolparanccsal _npm install -g @angular/cli_
+- Le kell tölteni a projekt megfelelő mappáját
+  *https://github.com/Exanim/Uni-Weather-app-project/tree/main/src/front-end/weather-app*
+- Konzollal belenavigálva elindítható az alkalmazás _npm start_
 - Webes alkalmazás: Az alkalmazás megtekintéséhez szükséges **egy** az ajánlott böngészők közül:
-Google Chrome, Mozilla Firefox, Opera
+  Google Chrome, Mozilla Firefox, Opera

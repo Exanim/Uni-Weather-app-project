@@ -14,9 +14,11 @@ export class DataStorageService {
   apiKey = '8d9445cab37f8906d9588c8b9977dd08';
   lat = 0;
   lon = 0;
+  isFetching: EventEmitter<boolean> = new EventEmitter<boolean>();
   onFetchError: EventEmitter<string> = new EventEmitter<string>();
 
   getGeoLocationByCityName(cityName: string) {
+    this.isFetching.next(true);
     const geoLocatorUrl = `http://api.openweathermap.org/geo/1.0/direct?q=${cityName}&appid=${this.apiKey}`;
     this.http
       .get<{ lat: number; lon: number }[]>(geoLocatorUrl)
@@ -61,6 +63,7 @@ export class DataStorageService {
       )
       .subscribe((filteredResponse) => {
         this.cardData.setCardsData(filteredResponse);
+        this.isFetching.next(false);
       });
   }
 }
