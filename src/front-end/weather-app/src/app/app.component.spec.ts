@@ -153,4 +153,32 @@ describe('Component: App', () => {
     const el = fixture.debugElement.query(By.css('body footer img'));
     expect(el).toBeTruthy();
   });
+
+  it('should have a body element with footer inside with p of data "Kapcsolat"', () => {
+    fixture.detectChanges();
+    const pElements = fixture.debugElement.queryAll(By.css('body footer p'));
+    const pText = pElements[0].nativeElement.textContent;
+    expect(pText).toContain('Kapcsolat: info@weatherapp.com');
+  });
+
+  it('should have a body element with footer inside with p of data "© 2023 Weather App"', () => {
+    fixture.detectChanges();
+    const pElements = fixture.debugElement.queryAll(By.css('body footer p'));
+    const pText = pElements[1].nativeElement.textContent;
+    expect(pText).toContain('© 2023 Weather App');
+  });
+
+  it('should have a body element with footer inside with p of data "Weather data provided by"', () => {
+    fixture.detectChanges();
+    const pElements = fixture.debugElement.queryAll(By.css('body footer p'));
+    const pText = pElements[2].nativeElement.textContent;
+    expect(pText).toContain('Weather data provided by');
+  });
+
+  it('should have a body element with footer inside with p of data "Weather data provided by"', () => {
+    fixture.detectChanges();
+    const el = fixture.debugElement.query(By.css('body footer p a'));
+    const aText = el.nativeElement.textContent;
+    expect(aText).toContain('OpenWeather');
+  });
 });

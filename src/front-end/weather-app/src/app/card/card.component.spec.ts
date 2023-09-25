@@ -93,4 +93,18 @@ describe('Component: App', () => {
     const pText = pElements[1].nativeElement.textContent;
     expect(pText).toContain('Páratartalom');
   })
+
+  it('should have an .details tag with .col tag, div element and p element with "0km/h"', () => {
+    fixture.detectChanges();
+    const pElements = fixture.debugElement.queryAll(By.css('.details .col p')); // Keresd meg az összes <p> elemet
+    const pText = pElements[2].nativeElement.textContent;
+    expect(pText).toContain('0.0 km/h');
+  })
+
+  it('should have an .details tag with .col tag, div element and p element with "Szélsebesség"', () => {
+    fixture.detectChanges();
+    const pElements = fixture.debugElement.queryAll(By.css('.details .col p')); // Keresd meg az összes <p> elemet
+    const pText = pElements[3].nativeElement.textContent;
+    expect(pText).toContain('Szélsebesség');
+  })
 });
