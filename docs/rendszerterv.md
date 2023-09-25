@@ -21,9 +21,9 @@ A webalkalmazás kártya alapú megjelenítésével a felhasználók gyorsan és
 | Név           | Szerepkör  | Feladat           |
 | ------------- | ---------- | ----------------- |
 | Gyenes Balázs | Programozó | Frontend Controll |
-| Baráth Simon  | Programozó | N/A               |
+| Baráth Simon  | Programozó | Frontend          |
 | Brázda Martin | Programozó | Frontend Style    |
-| Deák Erik     | Programozó | N/A               |
+| Deák Erik     | Programozó | Frontend Responsiveness |
 
 ### Ütemterv
 
