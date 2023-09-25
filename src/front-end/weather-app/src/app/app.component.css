@@ -272,16 +272,16 @@ footer p:not(:last-child)::after {
     width: 80px;
     height: 50px;
   }
-  
+
   .container{
     font-size: 22px;
     padding: 0 10px 0 0;
   }
-  
+
   .slider {
     border-radius: 15px;
   }
-  
+
   .slider:before {
     height: 40px;
     width: 40px;
@@ -289,7 +289,7 @@ footer p:not(:last-child)::after {
     bottom: 5px;
     border-radius: 10px;
   }
-  
+
   input[type="checkbox"]:checked + .slider:before {
     -webkit-transform: translateX(30px);
     -ms-transform: translateX(30px);
@@ -308,4 +308,8 @@ footer p:not(:last-child)::after {
 }
 .card:nth-child(5){
   animation-delay: 2500ms;
+}
+
+.card:hover{
+  box-shadow: 12px 12px 15px rgba(0, 0, 0, 0.2);
 }
