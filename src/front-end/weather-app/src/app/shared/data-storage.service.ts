@@ -4,7 +4,7 @@ import { map } from 'rxjs';
 import { Weather } from './weather.model';
 import { GetAll, List } from './get-all.model';
 import { CardDataService } from '../card/card-data.service';
-import { environment } from 'src/environments/environment.prod';
+import { environment } from 'src/environments/environment';
 
 @Injectable({
   providedIn: 'root',
