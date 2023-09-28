@@ -4,6 +4,7 @@ import { map } from 'rxjs';
 import { Weather } from './weather.model';
 import { GetAll, List } from './get-all.model';
 import { CardDataService } from '../card/card-data.service';
+import { environment } from 'src/environments/environment.prod';
 
 @Injectable({
   providedIn: 'root',
@@ -11,13 +12,13 @@ import { CardDataService } from '../card/card-data.service';
 export class DataStorageService {
   constructor(private http: HttpClient, private cardData: CardDataService) {}
 
-  apiKey = '8d9445cab37f8906d9588c8b9977dd08';
+  apiKey = environment.API_KEY;
   lat = 0;
   lon = 0;
   isFetching: EventEmitter<boolean> = new EventEmitter<boolean>();
   onFetchError: EventEmitter<string> = new EventEmitter<string>();
 
-  getGeoLocationByCityName(cityName: string) {
+  getGeoLocationByCityName(cityName: string): void {
     this.isFetching.next(true);
     const geoLocatorUrl = `http://api.openweathermap.org/geo/1.0/direct?q=${cityName}&appid=${this.apiKey}`;
     this.http
@@ -41,7 +42,7 @@ export class DataStorageService {
       });
   }
 
-  getWeatherInformationByGeoData() {
+  getWeatherInformationByGeoData(): void {
     const forecastUrl = `http://api.openweathermap.org/data/2.5/forecast?lat=${this.lat}&lon=${this.lon}&appid=${this.apiKey}`;
     this.http
       .get<GetAll>(forecastUrl)

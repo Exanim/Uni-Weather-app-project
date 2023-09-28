@@ -36,7 +36,7 @@ export class AppComponent implements OnInit {
     private dataStorage: DataStorageService
   ) {}
 
-  onLookUpCity() {
+  onLookUpCity() : void {
     if (this.formerCity !== this.city && this.city) {
       this.dataStorage.getGeoLocationByCityName(this.city);
       this.fetchedCityName = this.city;
@@ -46,7 +46,7 @@ export class AppComponent implements OnInit {
     }
   }
 
-  onCheckboxChange(){
+  onCheckboxChange() : void{
     this.cardData.setIsFahrenheit(this.isFahrenheit)
     this.cardData.UpdateTemperature();
   }

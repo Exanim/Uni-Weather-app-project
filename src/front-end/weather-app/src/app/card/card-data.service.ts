@@ -6,8 +6,8 @@ import { Weather } from '../shared/weather.model';
   providedIn: 'root',
 })
 export class CardDataService {
-  onWeatherChanged = new EventEmitter<Card[]>();
 
+  onWeatherChanged = new EventEmitter<Card[]>();
   isFahrenheit: boolean = false;
   cards: Card[] = [
     new Card(
@@ -89,7 +89,7 @@ export class CardDataService {
     return dayOfWeek;
   }
 
-  switchPictureUrl(descriptionOfWeatherCondition: string){
+  switchPictureUrl(descriptionOfWeatherCondition: string): string{
     let url: string;
     switch (descriptionOfWeatherCondition){
       case 'Thunderstorm':
@@ -121,21 +121,21 @@ export class CardDataService {
 
   setCardsData(weather: Weather[]): void {
     for (let i = 0; i < this.cards.length && i < weather.length; i++) {
-      let dayOfWeek = this.switchDayOfWeek(weather, i)
+      let dayOfWeek = this.switchDayOfWeek(weather, i);
       this.cards[i].imgSrc = this.switchPictureUrl(weather[i].weather);
       this.cards[i].day = dayOfWeek;
       this.cards[i].humidity = weather[i].humidity;
       this.cards[i].temperature = weather[i].temp - 273.15;
       this.cards[i].temperatureType = this.isFahrenheit;
-      this.cards[i].windSpeed = weather[i].windSpeed;
+      this.cards[i].windSpeed = weather[i].windSpeed * 3.6;
     }
     if(this.isFahrenheit){
-      this.UpdateTemperature()
+      this.UpdateTemperature();
     }
     this.onWeatherChanged.next(this.cards);
   }
 
-  UpdateTemperature(){
+  UpdateTemperature() : void{
     this.cards.forEach(card => {
       if (this.isFahrenheit){
         card.temperature = (card.temperature * 9/5) + 32;
@@ -148,7 +148,7 @@ export class CardDataService {
     this.onWeatherChanged.next(this.cards);
   }
 
-  setIsFahrenheit(isFahrenheit: boolean){
+  setIsFahrenheit(isFahrenheit: boolean) : void{
     this.isFahrenheit = isFahrenheit;
   }
 }
